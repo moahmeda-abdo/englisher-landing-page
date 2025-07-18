@@ -1,0 +1,83 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Why Do Our Ears Get Blocked on Airplanes and What Is The Solution",
+      "titleArabic": "لماذا تنسد آذاننا في الطائرات وما هو الحل؟",
+      "excerpt": "Discover the science behind why our ears get blocked during flights and learn effective solutions to prevent this common issue.",
+      "content": "When we fly, changes in air pressure can cause our ears to feel blocked or uncomfortable. This happens because the air pressure in the airplane cabin is different from the ground level. And here's another one that bothers a lot of us — getting blocked ears. It's sometimes called \"airplane ear,\" and may also be known as \"ear barotrauma.\" But why do we get it, and what can we do about it?",
+      "image": "/placeholder.png",
+      "category": "Health Tips",
+      "isRecent": true,
+      "is_highlighted": true,
+      "publishedDate": "2025-01-10",
+      "publishedTime": "10:48 PM",
+      "readTime": "5 min read"
+    },
+    {
+      "id": 2,
+      "title": "What are the top tips for improving your English pronunciation?",
+      "titleArabic": "ما هي أفضل النصائح لتحسين نطق اللغة الإنجليزية؟",
+      "excerpt": "Learn practical tips and techniques to improve your English pronunciation and speak more confidently.",
+      "content": "Improving your English pronunciation requires consistent practice and the right techniques. Here are the most effective methods...",
+      "image": "/placeholder.png",
+      "category": "Language Learning",
+      "isRecent": true,
+      "is_highlighted": false,
+      "publishedDate": "2024-01-10",
+      "readTime": "7 min read"
+    },
+    {
+      "id": 3,
+      "title": "What makes English an important language to learn?",
+      "titleArabic": "ما الذي يجعل اللغة الإنجليزية مهمة للتعلم؟",
+      "excerpt": "Explore the reasons why English has become the global language and why learning it is essential in today's world.",
+      "content": "English has become the lingua franca of the modern world for several important reasons. Its importance extends far beyond just communication...",
+      "image": "/placeholder.png",
+      "category": "Language Learning",
+      "isRecent": false,
+      "is_highlighted": false,
+      "publishedDate": "2024-01-05",
+      "readTime": "6 min read"
+    },
+    {
+      "id": 4,
+      "title": "How to Build Confidence When Speaking English",
+      "titleArabic": "كيفية بناء الثقة عند التحدث باللغة الإنجليزية",
+      "excerpt": "Discover effective strategies to overcome speaking anxiety and build confidence in English conversations.",
+      "content": "Many English learners struggle with confidence when speaking. Here are proven strategies to help you overcome this challenge...",
+      "image": "/placeholder.png",
+      "category": "Language Learning",
+      "isRecent": false,
+      "is_highlighted": false,
+      "publishedDate": "2023-12-28",
+      "readTime": "8 min read"
+    },
+    {
+      "id": 5,
+      "title": "Common English Grammar Mistakes to Avoid",
+      "titleArabic": "الأخطاء النحوية الشائعة في اللغة الإنجليزية التي يجب تجنبها",
+      "excerpt": "Learn about the most common grammar mistakes English learners make and how to avoid them.",
+      "content": "Grammar mistakes are common among English learners, but understanding these errors can significantly improve your language skills...",
+      "image": "/placeholder.png",
+      "category": "Grammar",
+      "isRecent": false,
+      "is_highlighted": false,
+      "publishedDate": "2023-12-20",
+      "readTime": "10 min read"
+    },
+    {
+      "id": 6,
+      "title": "The Benefits of Learning Business English",
+      "titleArabic": "فوائد تعلم اللغة الإنجليزية للأعمال",
+      "excerpt": "Understand how Business English can advance your career and open new opportunities.",
+      "content": "In today's global economy, Business English has become essential for professional success. Here's why it matters...",
+      "image": "/placeholder.png",
+      "category": "Business English",
+      "isRecent": false,
+      "is_highlighted": false,
+      "publishedDate": "2023-12-15",
+      "readTime": "6 min read"
+    }
+  ]
+} 
