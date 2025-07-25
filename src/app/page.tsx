@@ -6,7 +6,10 @@ import AboutUsSection from './components/AboutUsSection';
 import CoursesSection from './components/CoursesSection';
 import BlogsSection from './components/BlogsSection';
 import ContactSection from './components/ContactSection';
+import OurPartnersSection from './components/OurPartnersSection'
 import { ServicesStructuredData, WebsiteStructuredData, OrganizationStructuredData } from './components/StructuredData';
+// import Testimonials from '@/shared/components/Testimonials';
+import TestimonialsSection from './components/TestimonialsSection';
 
 // SEO Metadata
 export const metadata: Metadata = {
@@ -82,37 +85,36 @@ export default function HomePage() {
       <OrganizationStructuredData />
       <ServicesStructuredData />
 
-             {/* Main Content */}
-       <main className="min-h-screen bg-[#F3F3F3]">
-         {/* Hero Section */}
-         <HeroSlider />
+      {/* Main Content */}
+      <main className="min-h-screen bg-[#F3F3F3]">
+        {/* Hero Section */}
+        <HeroSlider />
 
-         {/* What We Offer Section */}
-         <WhatWeOfferSection />
+        {/* What We Offer Section */}
+        <WhatWeOfferSection />
 
-         {/* About Us Section */}
-         <AboutUsSection />
+        {/* About Us Section */}
+        <AboutUsSection />
 
-         {/* Courses Section */}
-         <CoursesSection />
+        {/* Courses Section */}
+        <CoursesSection />
 
-         {/* Blogs Section */}
-         <BlogsSection />
+        {/* Blogs Section */}
+        <BlogsSection />
 
-         {/* Contact Section */}
-         <ContactSection />
+        {/* Contact Section */}
+        <ContactSection />
 
-         {/* Future sections will go here */}
-         {/* 
+        {/* Our Partners Section */}
+        <OurPartnersSection />
+
+        {/* Future sections will go here */}
+        
          <TestimonialsSection />
-         */}
-       </main>
+        
+      </main>
 
-      {/* WhatsApp Button */}
-      {/* <WhatsAppButton 
-        phoneNumber="1234567890" 
-        message="Hello! I'm interested in learning English with Englisher Academy. Can you help me get started?"
-      /> */}
+
     </>
   );
 }

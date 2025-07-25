@@ -23,7 +23,7 @@ const BreadCrumbs: React.FC<BreadCrumbsProps> = ({ items, title }) => {
       }}
       className="flex flex-col justify-center    h-[180px] text-sm text-white/90"
       aria-label="Breadcrumb">
-      <Container>
+      <Container className=" px-4">
         <h2 className=" text-[40px] font-bold text-white mb-[10px]">{title}</h2>
         <div className="flex items-center">
           {items.map((item, idx) => {

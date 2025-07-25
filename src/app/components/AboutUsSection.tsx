@@ -7,7 +7,7 @@ import Container from "@/shared/components/Container";
 export default function AboutUsSection() {
   return (
     <section
-      className="relative w-full bg-[#F3F3F3] overflow-hidden min-h-[calc(100vh-50px)] flex items-center justify-center py-8"
+      className="relative w-full bg-[#F3F3F3] overflow-hidden min-h-[calc(100vh-50px)] flex items-center justify-center py-8 px-2 md:px-0"
       role="region"
       aria-labelledby="about-us-heading">
       <Container className="h-fit">
@@ -16,8 +16,31 @@ export default function AboutUsSection() {
             {/* Main Image with Englisher logo */}
             <div className="relative flex flex-col lg:block">
               <div
-                className="relative mx-auto lg:mx-0"
-                style={{ width: "min(1026.97px, 90vw)" }}>
+                className="relative mx-auto lg:mx-0 md:p-5 lg:bg-white rounded-sm"
+                style={{ width: "min(1026.97px, 90vw)" }}> 
+
+                 {/* top bar */}
+                <div className={cn(
+                  "absolute top-0 left-0 w-[calc(100%-140px)] h-2 bg-black rounded-xl hidden lg:block"
+                )} />
+                
+                {/* right top corner*/}
+                <div className={cn(
+                  "absolute top-0 right-0 w-[110px] h-2 bg-black rounded-xl hidden lg:block",
+                  "after:absolute after:top-0 after:right-0 after:h-[110px] after:w-2 after:bg-black after:rounded-xl"
+                )}/>
+
+                 {/* bottom bar */}
+                <div className={cn(
+                  "absolute bottom-0 right-0 w-[calc(100%-140px)] h-2 bg-black rounded-xl hidden lg:block"
+                )} />
+
+                 {/* left bottom corner */}
+                <div className={cn(
+                  "absolute bottom-0 left-0 w-[110px] h-2 bg-black rounded-xl hidden lg:block",
+                  "after:absolute after:bottom-0 after:left-0 after:h-[110px] after:w-2 after:bg-black after:rounded-xl"
+                )}/>
+
                 <div className="relative">
                   <img
                     src="/home/about-us.png"
@@ -89,7 +112,7 @@ export default function AboutUsSection() {
                   <div>
                     <Link
                       href="/about"
-                      className="inline-block bg-black text-white px-4 sm:px-6 py-2 rounded-lg font-semibold hover:bg-gray-800 transition-colors duration-300 shadow-lg text-xs sm:text-sm">
+                      className="inline-block bg-black text-white px-4 sm:px-6 py-2 rounded-lg hover:bg-gray-800 transition-colors duration-300 shadow-lg text-xs sm:text-sm">
                       Learn More
                     </Link>
                   </div>

@@ -3,6 +3,7 @@ import { Almarai } from "next/font/google";
 import "./globals.css";
 import Nav from "@/shared/components/Nav";
 import Footer from "@/shared/components/Footer";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 const almarai = Almarai({
   subsets: ["latin"],
@@ -23,10 +24,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${almarai.variable} font-sans`}>
-      <body className="antialiased bg-[#F3F3F3]">
+      <body className="antialiased bg-[#F3F3F3] vsc-domain-localhost vsc-initialized">
         <Nav />
         {children}
         <Footer />
+
+        {/* WhatsApp Button */}
+        <WhatsAppButton
+          phoneNumber="1234567890"
+          message="Hello! I'm interested in learning English with Englisher Academy. Can you help me get started?"
+        />
       </body>
     </html>
   );

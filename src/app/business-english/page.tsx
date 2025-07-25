@@ -14,8 +14,8 @@ export default function AboutPage() {
       />
 
       {/* Hero Section */}
-      <Container>
-        <section className=" mb-[80px]  px-[20] md:px-[50px] mt-8 rounded-md bg-white py-[20px] md:py-[50px]">
+      <Container className="px-4 md:px-0">
+        <section className=" mb-[80px]  px-[20] md:px-[50px] mt-8 rounded-xl md:rounded-md bg-white pt-0 pb-[20px] md:py-[50px]">
           <div className=" relative w-full h-fit rounded-2xl overflow-hidden ">
             <img
               src="/courses/general-english/hero.png"
@@ -48,7 +48,7 @@ export default function AboutPage() {
             </p>
           </div>
         </section>
-        <section className=" mb-[80px]  px-[20] md:px-[50px] mt-8 rounded-md bg-white py-[20px] md:py-[50px]">
+        <section className=" mb-[80px]  px-[20] md:px-[50px] mt-8 rounded-md bg-white py-0 md:py-[50px]">
           <img
             src="/courses/business-english/about.png"
             alt="General English Course About"
@@ -57,7 +57,7 @@ export default function AboutPage() {
         </section>
 
         {/* Course Features Section */}
-        <section className="mb-[80px]   mt-8 rounded-md  py-[20px] md:py-[50px]">
+        <section className="mt-8 rounded-md  py-[20px] md:py-[50px]">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Left Side - Course Features */}
             <div className="space-y-8">

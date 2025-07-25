@@ -1,7 +1,9 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
-import React, { useState } from "react";
-import Link from "next/link";
+import React, { useState, useEffect } from "react";
+import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from "react-icons/bs";
+import { cn } from "@/lib/classnames/cn";
+import Container from "@/shared/components/Container";
+import Image from "next/image";
 
 const courses = [
   {
@@ -33,162 +35,144 @@ const courses = [
 export default function CoursesSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [searchTerm, setSearchTerm] = useState("");
+    const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  
+    const filteredCourses = courses.filter(course =>
+      course.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      course.description.toLowerCase().includes(searchTerm.toLowerCase())
+    );
 
-  const filteredCourses = courses.filter(course =>
-    course.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    course.description.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+    // Auto-play functionality
+    useEffect(() => {
+      if (!isAutoPlaying) return;
+  
+      const interval = setInterval(() => {
+        setCurrentSlide((prev) => (prev + 1) % filteredCourses.length);
+      }, 5000); // Change slide every 5 seconds
+  
+      return () => clearInterval(interval);
+    }, [isAutoPlaying]);
 
   const goToSlide = (index: number) => {
     setCurrentSlide(index);
+    setIsAutoPlaying(false);
+    setTimeout(() => {
+      setIsAutoPlaying(true);
+    }, 10000)
+  };
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % filteredCourses.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + filteredCourses.length) % filteredCourses.length);
   };
 
   return (
-    <section 
-      className="relative h-[calc(100vh-50px)] w-full bg-gradient-to-r from-gray-900 via-gray-800 to-red-900 overflow-hidden"
+    <section
+      className="relative h-[calc(100vh-50px)] w-full bg-gradient-to-r from-gray-900 via-gray-800 to-red-900 overflow-hidden px-3 md:px-0"
       role="region"
       aria-labelledby="courses-heading"
     >
-      {/* Background Image */}
-      <div className="absolute inset-0 bg-black/50 z-10"></div>
-      
-      <div className="relative z-20 h-full flex items-center">
-        <div className="max-w-7xl mx-auto px-4 sm:px-8 w-full">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center h-full">
-            
-            {/* Left Side - Content */}
-            <div className="space-y-8">
-              {/* Main Heading */}
-              <h2 
-                id="courses-heading"
-                className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight"
-              >
-                Discover Our Courses
-              </h2>
+      <div className="absolute left-0 top-0 w-full xl:w-[45%] h-full z-10 bg-[url(/images/assets/courses_bg.png)] bg-cover bg-center bg-no-repeat">
+        <div className="absolute inset-0 bg-gradient-to-r from-black to-[90%] to-[#3a0004] opacity-90" />
+      </div>
 
-              {/* Description */}
-              <p className="text-xl md:text-2xl text-gray-300 leading-relaxed max-w-2xl">
-                &ldquo;Learn the secrets of mastering the American accent and speak 
-                fluently with &lsquo;Accent&rsquo; a book specially designed for beginners 
-                eager to speak English confidently and fluently. This book provides 
-                insights into the phonetic difference&rdquo;
-              </p>
+      <div className="absolute right-0 top-0 w-0 xl:w-[55%] h-full z-10 bg-gradient-to-br from-black to-[90%] to-[#7e0109] opacity-80">
+        {/* <div className="absolute inset-0 bg-gradient-to-br from-black to-[90%] to-[#7e0109] opacity-80" /> */}
+        <Image src="/images/assets/squares_white_bg.jpg" alt="" fill className="object-cover mix-blend-multiply" />
+      </div>
 
-              {/* Search Bar */}
-              <div className="relative">
-                <div className="relative">
+      {/* ✅ FLEX ROW: Left and Right side by side */}
+      <div className="relative z-20 h-full w-full flex flex-col gap-8 justify-center xl:flex-row">
+
+        {/* ✅ Left Side */}
+        <Container className="w-full xl:w-1/2 !max-w-[720px] xl:!pl-[200px] flex items-center">
+          <div className="space-y-8 w-full">
+            <h2 id="courses-heading" className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight">
+              Discover Our Courses
+            </h2>
+            <p className="text-sm md:text-base text-gray-300 leading-relaxed max-w-2xl">
+              &ldquo;Learn the secrets of mastering the American accent and speak fluently with &lsquo;Accent&rsquo; a book specially designed for beginners eager to speak English confidently and fluently. This book provides insights into the phonetic difference&rdquo;
+            </p>
+
+            {/* Search */}
+            <div className="relative w-full">
+              <div className="flex items-center gap-4 w-full">
+                <div className="relative flex-1 lg:flex-none w-full">
+                  <svg
+                    className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    />
+                  </svg>
                   <input
-                    type="text"
-                    placeholder="Search For Courses"
-                    value={searchTerm}
+                    value={searchTerm || ''}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    className="w-full max-w-md px-6 py-4 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                    name="search-courses"
+                    type="text"
+                    placeholder="Search For Courses ..."
+                    className="px-4 py-2 pl-9 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent w-full placeholder:text-gray-200 placeholder:font-md block h-[45px]"
                   />
-                  <div className="absolute right-4 top-1/2 transform -translate-y-1/2">
-                    <svg className="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-                  </div>
                 </div>
               </div>
-
-              {/* Navigation Dots */}
-              <div className="flex space-x-3">
-                {courses.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => goToSlide(index)}
-                    className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                      index === currentSlide
-                        ? 'bg-white w-8'
-                        : 'bg-white/50 hover:bg-white/80'
-                    }`}
-                    aria-label={`Go to course ${index + 1}`}
-                  />
-                ))}
-              </div>
             </div>
 
-            {/* Right Side - Course Cards */}
-            <div className="relative">
-              <div className="space-y-6">
-                {filteredCourses.map((course, index) => (
-                  <div
-                    key={course.id}
-                    className={`relative rounded-xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-300 ${
-                      index === currentSlide ? 'ring-2 ring-red-500' : ''
+            {/* Arrows and Dots */}
+            <div className="flex justify-start items-center gap-2">
+              <BsFillArrowLeftCircleFill className="text-[15px] cursor-pointer hover:text-red-200" onClick={prevSlide} />
+              {courses.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => goToSlide(index)}
+                  className={`w-2 h-2 rounded-full transition-all duration-300 cursor-pointer ${index === currentSlide
+                    ? "bg-red-500"
+                    : "bg-white/80 hover:bg-white/95"
                     }`}
-                  >
-                    {/* Course Image Background */}
-                    <div className="relative h-80">
-                      <img
-                        src={course.image}
-                        alt={course.title}
-                        className="w-full h-full object-cover"
-                      />
-                      
-                      {/* Dark Overlay */}
-                      <div className="absolute inset-0 bg-black/60"></div>
-                      
-                      {/* Arabic Text Banner */}
-                      <div className="absolute top-6 right-6 left-6">
-                        <div className="bg-red-700/90 backdrop-blur-sm px-6 py-4 rounded-lg">
-                          <div className="text-center">
-                            <div className="text-white text-lg font-bold mb-1">
-                              {course.title === "General English" && "المحادثات الفردية"}
-                              {course.title === "English Conversation" && "برنامج المحادثة للكبار"}
-                              {course.title === "Business English" && "طور مهاراتك في الإنجليزية"}
-                            </div>
-                            <div className="text-white/90 text-sm font-medium">
-                              {course.title === "General English" && "ONE-TO-ONE SESSIONS"}
-                              {course.title === "English Conversation" && "ENGLISH CONVERSATION COURSES"}
-                              {course.title === "Business English" && "مع ENGLISHER"}
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      
-                      {/* Course Content Overlay */}
-                      <div className="absolute bottom-0 left-0 right-0 p-6">
-                        <div className="space-y-4">
-                          <h3 className="text-2xl font-bold text-white">
-                            {course.title}
-                          </h3>
-                          
-                          <p className="text-gray-200 text-sm leading-relaxed">
-                            {course.description}
-                          </p>
-                          
-                          <div className="flex items-center justify-between">
-                            <div className="flex items-center space-x-2">
-                              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                              </svg>
-                              <span className="text-white text-sm font-medium">
-                                {course.level}
-                              </span>
-                            </div>
-                            
-                            <Link
-                              href={course.link}
-                              className="inline-flex items-center bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg text-white hover:bg-white/30 transition-all duration-300 border border-white/20"
-                            >
-                              <span className="text-sm font-medium">Learn More</span>
-                              <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                              </svg>
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
+                  aria-label={`Go to course ${index + 1}`}
+                />
+              ))}
+              <BsFillArrowRightCircleFill className="text-[15px] cursor-pointer hover:text-red-200" onClick={nextSlide} />
             </div>
           </div>
+        </Container>
+
+        {/* ✅ Right Side - aligned to screen edge */}
+        <div className="xl:flex-1 flex items-center justify-center xl:justify-end">
+          {filteredCourses.map((course, index) => (
+            <div
+              key={course.id}
+              className={cn(
+                `relative overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-300`,
+                index === currentSlide ? 'transform scale-[102%] z-[100]' : '',
+                'bg-cover bg-center aspect-[9/16] w-[250px] xl:w-[230px] 2xl:w-[340px] 3xl:w-[370px]',
+                course.title === 'General English' && 'bg-[url(/images/assets/courses_one_to_one.png)]',
+                course.title === 'English Conversation' && 'bg-[url(/images/assets/courses_conversation.png)]',
+                course.title === 'Business English' && 'bg-[url(/images/assets/courses_business.png)]',
+                index === 0 && 'rounded-l-md',
+                // index === filteredCourses.length - 1 && 'rounded-r-md'
+              )}
+            >
+              <div className="absolute w-full h-full bg-gradient-to-t from-black/60 to-transparent  inset-0" />
+
+              <div className="absolute bottom-0 left-0">
+                <div className="flex flex-col gap-2 p-3">
+                  <h3 className="text-lg font-semibold">{course.title}</h3>
+                  <p className="text-sm text-gray-200 line-clamp-2">{course.description}</p>
+                  <span className="text-sm text-gray-100">{course.level} </span>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
   );
-} 
+}

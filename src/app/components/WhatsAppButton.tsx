@@ -40,12 +40,12 @@ export default function WhatsAppButton({
       <div className={`fixed bottom-6 right-6 z-50 ${className}`}>
         <button
           onClick={handleWhatsAppClick}
-          className="w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-green-300"
+          className="w-14 h-14 bg-black hover:bg-black/80 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-4 cursor-pointer"
           aria-label="Contact us on WhatsApp for English learning support"
           title="Chat with us on WhatsApp"
         >
           <svg
-            className="w-8 h-8 text-white"
+            className="w-6 h-6 text-white"
             fill="currentColor"
             viewBox="0 0 24 24"
             aria-hidden="true"

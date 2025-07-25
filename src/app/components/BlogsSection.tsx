@@ -28,11 +28,11 @@ export default function BlogsSection() {
         <div className="h-full flex flex-col">
           {/* Header */}
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-6 lg:mb-8 gap-4">
-            <div className="max-w-md">
+            <div className="w-full lg:max-w-1/2">
               <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-bold text-black mb-2 lg:mb-4">
                 Our Blogs
               </h2>
-              <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+              <p className="text-gray-600 text-sm leading-relaxed">
                 A concise guide to mastering American English pronunciation with
                 essential techniques, practical exercises, and strategies for
                 confident, fluent communication.
@@ -55,7 +55,7 @@ export default function BlogsSection() {
                 <input
                   type="text"
                   placeholder="Search For Article ..."
-                  className="px-4 py-2 pl-9 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent w-full lg:w-64 placeholder:text-gray-500 block h-[45px]"
+                  className="px-4 py-2 pl-9 border text-black border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent w-full lg:w-80 placeholder:text-gray-500 block h-[45px]"
                 />
               </div>
             </div>
@@ -73,16 +73,16 @@ export default function BlogsSection() {
                       className="cursor-pointer w-full lg:w-1/2 flex flex-col sm:flex-row-reverse lg:flex-row-reverse items-stretch bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                       <div className="flex-1 p-4 sm:p-6 flex flex-col justify-between">
                         <div>
-                          <h3 className="text-[#0C0C0C] text-lg sm:text-xl lg:text-[24px] leading-[150%] mb-2 sm:mb-3 font-semibold line-clamp-2">
+                          <h3 className="text-[#0C0C0C] truncate max-w-[400px] text-lg lg:text-[24px] leading-[150%] mb-2 sm:mb-3 font-semibold line-clamp-2">
                             {blog.title}
                           </h3>
                           <p className="text-[#555555] text-sm sm:text-base leading-[150%] mb-3 sm:mb-4 line-clamp-3 sm:line-clamp-4">
                             {blog.content}
                           </p>
                         </div>
-                        <div className="flex items-center gap-2 text-xs sm:text-sm text-[#555555]">
+                        <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-400">
                           <span>Published at</span>
-                          <span className="font-medium">{blog.publishedDate}</span>
+                          <span className="font-medium">{blog.publishedDate} - {blog.publishedTime}</span>
                         </div>
                       </div>
                       <div className="w-full sm:w-48 lg:w-56 h-48 sm:h-auto flex-shrink-0">
@@ -104,7 +104,7 @@ export default function BlogsSection() {
           {/* Bottom Controls */}
           <div className="flex flex-col sm:flex-row items-center justify-between mt-6 lg:mt-8 gap-4">
             {/* Navigation Controls */}
-            <div className="flex items-center gap-4 order-2 sm:order-1">
+            <div className="flex items-center gap-3 order-2 sm:order-1">
               {/* Previous Button */}
               <button
                 onClick={() =>
@@ -142,7 +142,7 @@ export default function BlogsSection() {
             {/* Discover More Button */}
             <Link
               href="/blogs"
-              className="bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors order-1 sm:order-2 w-full sm:w-auto text-center">
+              className="bg-black text-white px-7 py-2 rounded-lg font-medium hover:bg-gray-800 transition-colors order-1 sm:order-2 w-full sm:w-auto text-center">
               Discover More
             </Link>
           </div>

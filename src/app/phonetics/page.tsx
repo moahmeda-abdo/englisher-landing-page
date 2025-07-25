@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import BreadCrumbs from "@/shared/components/BreadCrumbs";
 import Container from "@/shared/components/Container";
-import Testimonials from "@/shared/components/Testimonials";
+// import Testimonials from "@/shared/components/Testimonials";
+import TestimonialsSection from "../components/TestimonialsSection"
 
 export default function AboutPage() {
   return (
@@ -18,8 +19,8 @@ export default function AboutPage() {
       />
 
       {/* Hero Section */}
-      <Container>
-        <section className=" mb-[80px]  px-[20] md:px-[50px] mt-8 rounded-md bg-white py-[20px] md:py-[50px]">
+      <Container  className="px-4 md:px-0">
+        <section className=" mb-[80px]  px-[20] md:px-[50px] mt-8 rounded-xl md:rounded-md bg-white pt-0 pb-[20px]  md:py-[50px]">
           <div className=" relative w-full h-fit rounded-2xl overflow-hidden ">
             <img
               src="/courses/general-english/hero.png"
@@ -64,7 +65,7 @@ export default function AboutPage() {
             </h2>
           </div>
           
-          <div className="flex gap-6">
+          <div className="flex gap-6 flex-col md:flex-row">
             {/* Objective 1 */}
             <div className="bg-gray-50 rounded-lg p-6 relative flex-1">
               <div className="text-[20px] md:text-[32px] w-[70px] h-[70px] bg-[#E506161A] text-[#E50616]  rounded-full flex items-center justify-center font-bold ">
@@ -212,21 +213,21 @@ export default function AboutPage() {
             {/* Session 1 */}
             <div className=" p-4 flex items-center gap-3">
               <div className="text-lg font-bold text-black">
-                Session <span className="text-red-600"> 1:</span> T sounds
+                Session <span className="text-red-600"> 1:</span> <span className="text-base font-medium">T sounds</span>
               </div>
             </div>
 
             {/* Session 2 */}
             <div className=" p-4 flex items-center gap-3">
               <div className="text-lg font-bold text-black">
-                Session <span className="text-red-600"> 2:</span> Diphthongs
+                Session <span className="text-red-600"> 2:</span> <span className="text-base font-medium">Diphthongs</span>
               </div>
             </div>
 
             {/* Session 3 */}
             <div className=" p-4 flex items-center gap-3">
               <div className="text-lg font-bold text-black">
-                Session <span className="text-red-600"> 3:</span> Word stress
+                Session <span className="text-red-600"> 3:</span> <span className="text-base font-medium">Word stress</span>
               </div>
             </div>
             </div>
@@ -235,21 +236,21 @@ export default function AboutPage() {
             {/* Session 4 */}
             <div className=" p-4 flex items-center gap-3">
               <div className="text-lg font-bold text-black">
-                Session <span className="text-red-600"> 4:</span> Sentence stress types
+                Session <span className="text-red-600"> 4:</span> <span className="text-base font-medium">Sentence stress types</span>
               </div>
             </div>
 
             {/* Session 5 */}
             <div className=" p-4 flex items-center gap-3">
               <div className="text-lg font-bold text-black">
-                Session <span className="text-red-600"> 5:</span> Reduction (Schwa and contracted forms)
+                Session <span className="text-red-600"> 5:</span> <span className="text-base font-medium">Reduction (Schwa and contracted forms)</span>
               </div>
             </div>
 
             {/* Session 6 */}
             <div className=" p-4 flex items-center gap-3">
               <div className="text-lg font-bold text-black">
-                Session <span className="text-red-600"> 6:</span> Assimilation
+                Session <span className="text-red-600"> 6:</span> <span className="text-base font-medium">Assimilation</span>
               </div>
             </div>
             </div>
@@ -257,14 +258,14 @@ export default function AboutPage() {
             {/* Session 7 */}
             <div className=" p-4 flex items-center gap-3">
               <div className="text-lg font-bold text-black">
-                Session <span className="text-red-600"> 7:</span> Intonation
+                Session <span className="text-red-600"> 7:</span> <span className="text-base font-medium">Intonation</span>
               </div>
             </div>
 
             {/* Session 8 */}
             <div className=" p-4 flex items-center gap-3">
               <div className="text-lg font-bold text-black">
-                Session <span className="text-red-600"> 8:</span> Connected speech rules
+                Session <span className="text-red-600"> 8:</span> <span className="text-base font-medium">Connected speech rules</span>
               </div>
             </div>
           </div>
@@ -273,7 +274,7 @@ export default function AboutPage() {
       </Container>
 
       {/* Testimonials Section */}
-      <Testimonials />
+      <TestimonialsSection />
     </div>
   );
 }

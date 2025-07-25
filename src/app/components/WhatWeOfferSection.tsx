@@ -24,7 +24,7 @@ export default function WhatWeOfferSection() {
         </h2>
 
         {/* Description */}
-        <p className="text-xl md:text-2xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
+        <p className="text-base md:text-lg text-gray-300 leading-relaxed mx-auto">
           Personalized English courses, expert instructors, and flexible plans
           — all designed to help you speak with clarity and confidence
         </p>

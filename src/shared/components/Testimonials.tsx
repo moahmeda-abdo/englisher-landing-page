@@ -4,6 +4,7 @@ import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Autoplay } from 'swiper/modules'
 
+
 // Import Swiper styles
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -69,7 +70,7 @@ const Testimonials = () => {
     for (let i = 0; i < fullStars; i++) {
       stars.push(
         <svg key={i} className="w-4 h-4 fill-current text-red-500" viewBox="0 0 24 24">
-          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
         </svg>
       )
     }
@@ -77,7 +78,7 @@ const Testimonials = () => {
     if (hasHalfStar) {
       stars.push(
         <svg key="half" className="w-4 h-4 fill-current text-red-500" viewBox="0 0 24 24">
-          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
         </svg>
       )
     }
@@ -87,7 +88,7 @@ const Testimonials = () => {
     for (let i = 0; i < remainingStars; i++) {
       stars.push(
         <svg key={`empty-${i}`} className="w-4 h-4 fill-current text-gray-300" viewBox="0 0 24 24">
-          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
         </svg>
       )
     }
@@ -103,7 +104,7 @@ const Testimonials = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-black">
             <span className="text-red-500">Clients &apos;</span> Testimonials
           </h2>
-          
+
           {/* Updated Navigation */}
           <div className="flex items-center gap-6">
             {/* Left Arrow */}
@@ -112,10 +113,10 @@ const Testimonials = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </button>
-            
+
             {/* Custom pagination dots */}
             <div className="testimonials-pagination flex gap-4"></div>
-            
+
             {/* Right Arrow */}
             <button className="testimonials-button-next w-10 h-10 bg-black hover:bg-gray-800 rounded-full flex items-center justify-center transition-colors">
               <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -123,7 +124,9 @@ const Testimonials = () => {
               </svg>
             </button>
           </div>
+
         </div>
+
 
         {/* Swiper Slider */}
         <Swiper
@@ -167,9 +170,9 @@ const Testimonials = () => {
               <div className="bg-white text-black rounded-lg p-6 h-full">
                 {/* Profile section */}
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-16 h-16 rounded-full overflow-hidden bg-gray-200">
-                    <img 
-                      src={testimonial.image} 
+                  <div className="w-16 h-16 rounded-lg overflow-hidden bg-gray-200">
+                    <img
+                      src={testimonial.image}
                       alt={testimonial.name}
                       className="w-full h-full object-cover"
                     />

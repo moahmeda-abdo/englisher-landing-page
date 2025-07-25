@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { useState } from "react";
 
@@ -44,9 +43,9 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="w-full h-[500px] flex pb-[70px] !bg-[#F3F3F3] ">
+    <section className="w-full h-[700px] flex items-center !bg-[#F3F3F3] relative">
       {/* Left Side - Dark Form Section */}
-      <div className="w-full lg:w-1/2 bg-black flex items-center justify-center py-[75px] px-8 lg:px-16">
+      <div className="w-full lg:w-1/2 bg-black flex items-center justify-center py-[75px] px-8 lg:px-16 lg:rounded-r-lg">
         <div className="w-full max-w-md">
           <div className="mb-8">
             <h2 className="text-white text-3xl lg:text-4xl font-bold mb-4">
@@ -116,23 +115,9 @@ export default function ContactSection() {
       </div>
 
       {/* Right Side - Red Englisher Logo Section */}
-      <div className="hidden lg:flex w-1/2 ">
+      <div className="hidden lg:flex w-1/2 h-[80%] bg-[url('/images/assets/send_message.png')] bg-cover bg-top">
         {/* Background Image */}
-        <img
-          src="/home/send-message.png"
-          alt="Background"
-          className="absolute inset-0 w-full h-full object-cover opacity-40"
-        />
 
-        {/* Englisher Text Overlay */}
-        <div className="text-center relative z-10">
-          <h1 className="text-red-200 text-6xl lg:text-7xl xl:text-8xl font-bold tracking-wider">
-            Englisher
-          </h1>
-        </div>
-
-        {/* Red Overlay */}
-        <div className="absolute inset-0 bg-red-600/60 z-5"></div>
       </div>
     </section>
   );

@@ -121,11 +121,11 @@ export default function AboutPage() {
             </div>
           </div>
           {/* Image */}
-          <div className="w-full lg:w-[60%] flex items-center justify-center">
+          <div className="w-full lg:w-[70%] flex items-center justify-center">
             <img
               src="/about/vision.png"
               alt="Mission and Vision"
-              className="w-full max-w-4xl rounded-2xl object-cover h-[400px] md:h-[500px] lg:h-[766px]"
+              className="w-full max-w-4xl rounded-lg object-cover h-[400px] md:h-[500px] lg:h-[766px]"
             />
           </div>
         </section>
@@ -145,19 +145,21 @@ export default function AboutPage() {
         </h2>
         <div className="flex flex-col md:flex-row gap-8 w-full max-w-5xl justify-center items-center">
           {/* London Partner */}
-          <div className="bg-white rounded-lg shadow p-8 flex items-center justify-center w-full max-w-md min-h-[200px]">
+          <div className="relative bg-white rounded-lg shadow p-8 flex items-center justify-center w-full max-w-md min-h-[200px] overflow-hidden">
+            <div className="absolute left-[44%] top-[-50%] w-full h-full bg-[url('/images/assets/squares_white_bg.jpg')] bg-cover bg-left rotate-90 origin-top-left" />
             <img
               src="/about/london.png"
               alt="London School of Business Excellence"
-              className="h-20 md:h-24 w-auto object-contain mr-6"
+              className="h-20 md:h-24 w-auto object-contain mr-6 z-10"
             />
           </div>
           {/* Oxford Partner */}
-          <div className="bg-white rounded-lg shadow p-8 flex items-center justify-center w-full max-w-md min-h-[200px]">
+          <div className="relative bg-white rounded-lg shadow p-8 flex items-center justify-center w-full max-w-md min-h-[200px] overflow-hidden">
+            <div className="absolute right-[44%] top-[-50%] w-full h-full bg-[url('/images/assets/squares_white_bg.jpg')] bg-cover bg-left -rotate-90 origin-top-right" />
             <img
               src="/about/oxford.png"
               alt="Oxford Placement Test"
-              className="h-20 md:h-24 w-auto object-contain mr-6"
+              className="h-20 md:h-24 w-auto object-contain mr-6 z-10"
             />
           </div>
         </div>
