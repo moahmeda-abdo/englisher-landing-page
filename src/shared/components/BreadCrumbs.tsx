@@ -21,15 +21,15 @@ const BreadCrumbs: React.FC<BreadCrumbsProps> = ({ items, title }) => {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
-      className="flex flex-col justify-center    h-[180px] text-sm text-white/90"
+      className="flex flex-col justify-center h-[180px] text-sm text-white/90"
       aria-label="Breadcrumb">
       <Container className=" px-4">
-        <h2 className=" text-[40px] font-bold text-white mb-[10px]">{title}</h2>
+        <h2 className="text-base md:text-2xl lg:text-[40px] font-bold text-white mb-[10px]">{title}</h2>
         <div className="flex items-center">
           {items.map((item, idx) => {
             const isLast = idx === items.length - 1;
             return (
-              <span key={item.to} className="flex items-center">
+              <span key={item.to} className="flex items-center text-xs md:text-base">
                 {idx > 0 && <span className="mx-2 text-white/60">&gt;</span>}
                 {isLast ? (
                   <span className="font-semibold text-white">{item.title}</span>

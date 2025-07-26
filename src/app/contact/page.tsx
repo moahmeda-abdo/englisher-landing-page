@@ -17,14 +17,17 @@ export default function Page() {
         <div className="bg-[#F3F3F3]">
             <BreadCrumbs title={breadcrumbs.title} items={breadcrumbs.breadCrumbs} />
 
-            <Container className="min-h-[120vh] flex items-center justify-center">
-                <div className="relative bg-white p-8 w-full flex rounded-md shadow-md items-center">
-                    <div className="w-1/2  overflow-y-auto flex flex-col justify-between p-8 text-black">
+            <Container className="min-h-[calc(100vh-200px)] flex items-center justify-center">
+                <div className="relative bg-white px-8 w-full flex flex-col-reverse md:flex-row rounded-md shadow-md items-center overflow-hidden">
+                    <div className="absolute left-[50%] top-[-5px] w-[100vh] h-[50vw] bg-[url(/images/assets/squares_white_bg.jpg)] bg-cover bg-center rotate-90 origin-top-left z-10"></div>
+
+                    <div className="relative w-full lg:w-1/2 flex flex-col justify-between p-8 text-black z-20">
                         <ContactForm />
                     </div>
-                    <div className="w-1/2  flex items-center p-8 ">
+
+                    <div className="relative w-1/2 hidden lg:flex items-center p-8 z-20">
                         <img
-                            src={"/contact/contact.png"}
+                            src="/contact/contact.png"
                             alt="Hero"
                             className="w-full h-full object-cover rounded-md"
                         />

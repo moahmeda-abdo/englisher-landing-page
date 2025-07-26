@@ -10,7 +10,7 @@ const OurPartnersSection = () => {
         <h2 className="text-2xl md:text-3xl font-bold text-center">
           Our Partners
         </h2>
-        <p className="text-gray-600 max-w-[40%] text-center mb-4">
+        <p className="text-gray-600 md:max-w-[40%] text-center mb-4 text-xs md:text-sm lg:text-base">
           A concise guide to mastering American English pronunciation with essential techniques, practical exercises, and strategies for confident, fluent communication.
         </p>
         <div className="flex flex-col md:flex-row gap-8 w-full max-w-5xl justify-center items-center">

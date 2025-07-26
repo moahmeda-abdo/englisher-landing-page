@@ -24,7 +24,7 @@ export default function BlogsSection() {
 
   return (
     <section className="w-full bg-[#F3F3F3] py-8 lg:py-12 min-h-[500px] lg:min-h-[700px]">
-      <Container className="h-full">
+      <Container className="h-full px-4">
         <div className="h-full flex flex-col">
           {/* Header */}
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-6 lg:mb-8 gap-4">
@@ -70,7 +70,7 @@ export default function BlogsSection() {
                   {currentBlogs.map((blog) => (
                     <div
                       key={blog.id}
-                      className="cursor-pointer w-full lg:w-1/2 flex flex-col sm:flex-row-reverse lg:flex-row-reverse items-stretch bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                      className="cursor-pointer w-full lg:w-1/2 flex flex-col-reverse sm:flex-row-reverse lg:flex-row-reverse items-stretch bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                       <div className="flex-1 p-4 sm:p-6 flex flex-col justify-between">
                         <div>
                           <h3 className="text-[#0C0C0C] truncate max-w-[400px] text-lg lg:text-[24px] leading-[150%] mb-2 sm:mb-3 font-semibold line-clamp-2">

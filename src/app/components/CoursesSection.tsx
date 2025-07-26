@@ -164,9 +164,9 @@ export default function CoursesSection() {
 
               <div className="absolute bottom-0 left-0">
                 <div className="flex flex-col gap-2 p-3">
-                  <h3 className="text-lg font-semibold">{course.title}</h3>
-                  <p className="text-sm text-gray-200 line-clamp-2">{course.description}</p>
-                  <span className="text-sm text-gray-100">{course.level} </span>
+                  <h3 className="text-sm md:text-base lg:text-lg font-semibold">{course.title}</h3>
+                  <p className="text-xs md:text-sm text-gray-200 line-clamp-2">{course.description}</p>
+                  <span className="text-xs md:text-sm text-gray-100">{course.level} </span>
                 </div>
               </div>
             </div>
