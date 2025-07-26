@@ -31,7 +31,7 @@ export default function RootLayout({
 
         {/* WhatsApp Button */}
         <WhatsAppButton
-          phoneNumber="1234567890"
+          phoneNumber="+201000041191"
           message="Hello! I'm interested in learning English with Englisher Academy. Can you help me get started?"
         />
       </body>

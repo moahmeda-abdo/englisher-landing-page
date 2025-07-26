@@ -16,11 +16,11 @@ export default function AboutPage() {
       {/* Hero Section */}
       <Container className="px-4 md:px-0">
         <section className=" mb-[80px]  px-[20] md:px-[50px] mt-8 rounded-xl md:rounded-md bg-white pt-0 pb-[20px] md:py-[50px]">
-          <div className=" relative w-full h-fit rounded-2xl overflow-hidden ">
+          <div className=" relative w-full h-fit rounded-t-2xl md:rounded-b-2xl overflow-hidden ">
             <img
               src="/courses/general-english/hero.png"
               alt="General English Course Hero"
-              className="h-[350px] md:h-[500px] max-h-[500px] object-cover rounded-md block"
+              className="h-[350px] md:h-[500px] max-h-[500px] object-cover rounded-t-md md:rounded-b-md block"
             />
             {/* Logo overlay */}
             <img
@@ -62,7 +62,7 @@ export default function AboutPage() {
             {/* Left Side - Course Features */}
             <div className="space-y-8">
               {/* Certification */}
-              <div className="text-center bg-white py-[25px] rounded-md">
+              <div className="text-center bg-white py-[25px] rounded-md px-2">
                 <div className="w-[80px] h-[80px] mx-auto mb-4  rounded-full flex items-center justify-center">
                   <svg
                     width="78"
@@ -90,7 +90,7 @@ export default function AboutPage() {
               </div>
 
               {/* Final Project */}
-              <div className="text-center bg-white py-[25px] rounded-md">
+              <div className="text-center bg-white py-[25px] rounded-md px-2">
                 <div className="w-[80px] h-[80px] mx-auto mb-4  rounded-full flex items-center justify-center">
                   <svg
                     width="78"
@@ -125,7 +125,7 @@ export default function AboutPage() {
               </div>
 
               {/* Weekly Assignments */}
-              <div className="text-center bg-white py-[25px] rounded-md">
+              <div className="text-center bg-white py-[25px] rounded-md px-2">
                 <div className="w-[80px] h-[80px] mx-auto mb-4  rounded-full flex items-center justify-center">
                   <svg
                     width="78"
