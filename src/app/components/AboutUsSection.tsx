@@ -1,10 +1,14 @@
+"use client";
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Link from "next/link";
 import { cn } from "@/lib/classnames/cn";
 import Container from "@/shared/components/Container";
+import {useCountUp} from "@/shared/hooks/useCountUp"
 
 export default function AboutUsSection() {
+  const {count, ref} = useCountUp(12000, 1500);
+
   return (
     <section
       className="relative w-full bg-[#F3F3F3] overflow-hidden min-h-[calc(100vh-50px)] flex items-center justify-center py-8 px-2 md:px-0"
@@ -82,16 +86,17 @@ export default function AboutUsSection() {
                     </p>
                   </div>
 
-                  <div className="grid grid-cols-3 gap-3 sm:gap-6 mb-6 sm:mb-8">
+                  <div className="flex justify-center items-center gap-3 sm:gap-6 mb-6 sm:mb-8">
+                  {/* <div className="grid grid-cols-3 gap-3 sm:gap-6 mb-6 sm:mb-8"> */}
                     <div className="text-center">
-                      <div className="text-xl sm:text-2xl font-bold text-red-500 mb-1">
-                        +12000
+                      <div className="text-2xl sm:text-4xl font-bold text-red-500 mb-1" ref={ref}>
+                        +{count}
                       </div>
-                      <div className="text-gray-600 text-xs">
+                      <div className="text-gray-600 text-sm">
                         learner and listener
                       </div>
                     </div>
-                    <div className="text-center">
+                    {/* <div className="text-center">
                       <div className="text-xl sm:text-2xl font-bold text-red-500 mb-1">
                         +15
                       </div>
@@ -106,7 +111,7 @@ export default function AboutUsSection() {
                       <div className="text-gray-600 text-xs">
                         E - Books With Audios
                       </div>
-                    </div>
+                    </div> */}
                   </div>
 
                   <div>

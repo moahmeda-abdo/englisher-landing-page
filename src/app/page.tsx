@@ -109,9 +109,9 @@ export default function HomePage() {
         <OurPartnersSection />
 
         {/* Future sections will go here */}
-        
-         <TestimonialsSection />
-        
+
+        <TestimonialsSection />
+
       </main>
 
 

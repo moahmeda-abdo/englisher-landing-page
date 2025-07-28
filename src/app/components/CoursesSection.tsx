@@ -4,6 +4,7 @@ import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from "react-ico
 import { cn } from "@/lib/classnames/cn";
 import Container from "@/shared/components/Container";
 import Image from "next/image";
+import Link from "next/link";
 
 const courses = [
   {
@@ -35,23 +36,23 @@ const courses = [
 export default function CoursesSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [searchTerm, setSearchTerm] = useState("");
-    const [isAutoPlaying, setIsAutoPlaying] = useState(true);
-  
-    const filteredCourses = courses.filter(course =>
-      course.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      course.description.toLowerCase().includes(searchTerm.toLowerCase())
-    );
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
-    // Auto-play functionality
-    useEffect(() => {
-      if (!isAutoPlaying) return;
-  
-      const interval = setInterval(() => {
-        setCurrentSlide((prev) => (prev + 1) % filteredCourses.length);
-      }, 5000); // Change slide every 5 seconds
-  
-      return () => clearInterval(interval);
-    }, [isAutoPlaying]);
+  const filteredCourses = courses.filter(course =>
+    course.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    course.description.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  // Auto-play functionality
+  useEffect(() => {
+    if (!isAutoPlaying) return;
+
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % filteredCourses.length);
+    }, 5000); // Change slide every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [isAutoPlaying]);
 
   const goToSlide = (index: number) => {
     setCurrentSlide(index);
@@ -126,13 +127,13 @@ export default function CoursesSection() {
             </div>
 
             {/* Arrows and Dots */}
-            <div className="flex justify-start items-center gap-2">
+            <div className="flex justify-center lg:justify-start items-center gap-3 md:gap-2">
               <BsFillArrowLeftCircleFill className="text-[15px] cursor-pointer hover:text-red-200" onClick={prevSlide} />
               {courses.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => goToSlide(index)}
-                  className={`w-2 h-2 rounded-full transition-all duration-300 cursor-pointer ${index === currentSlide
+                  className={`w-3 h-3 rounded-full transition-all duration-300 cursor-pointer ${index === currentSlide
                     ? "bg-red-500"
                     : "bg-white/80 hover:bg-white/95"
                     }`}
@@ -145,31 +146,42 @@ export default function CoursesSection() {
         </Container>
 
         {/* ✅ Right Side - aligned to screen edge */}
-        <div className="xl:flex-1 flex items-center justify-center xl:justify-end">
+        <div className="xl:flex-1 flex items-center justify-center xl:justify-end h-1/2 sm:h-auto">
           {filteredCourses.map((course, index) => (
-            <div
-              key={course.id}
-              className={cn(
-                `relative overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-300`,
-                index === currentSlide ? 'transform scale-[102%] z-[100]' : '',
-                'bg-cover bg-center aspect-[9/16] w-[250px] xl:w-[230px] 2xl:w-[340px] 3xl:w-[370px]',
-                course.title === 'General English' && 'bg-[url(/images/assets/courses_one_to_one.png)]',
-                course.title === 'English Conversation' && 'bg-[url(/images/assets/courses_conversation.png)]',
-                course.title === 'Business English' && 'bg-[url(/images/assets/courses_business.png)]',
-                index === 0 && 'rounded-l-md',
-                // index === filteredCourses.length - 1 && 'rounded-r-md'
-              )}
-            >
-              <div className="absolute w-full h-full bg-gradient-to-t from-black/60 to-transparent  inset-0" />
-
-              <div className="absolute bottom-0 left-0">
-                <div className="flex flex-col gap-2 p-3">
-                  <h3 className="text-sm md:text-base lg:text-lg font-semibold">{course.title}</h3>
-                  <p className="text-xs md:text-sm text-gray-200 line-clamp-2">{course.description}</p>
-                  <span className="text-xs md:text-sm text-gray-100">{course.level} </span>
+            <Link href={course?.link || "/"} key={course.id} className="group">
+              <div
+                className={cn(
+                  ` relative overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-300`,
+                  index === currentSlide ? 'transform scale-[105%] z-[100] w-[170px]' : 'w-[100px]',
+                  'bg-cover bg-center aspect-[9/16] sm:w-[150px] md:w-[200px] lg:w-[250px] xl:w-[230px] 2xl:w-[340px] 3xl:w-[370px]',
+                  course.title === 'General English' && 'bg-[url(/images/assets/courses_one_to_one.png)]',
+                  course.title === 'English Conversation' && 'bg-[url(/images/assets/courses_conversation.png)]',
+                  course.title === 'Business English' && 'bg-[url(/images/assets/courses_business.png)]',
+                  index === 0 && 'rounded-l-md',
+                  'flex flex-col justify-end items-start'
+                  // index === filteredCourses.length - 1 && 'rounded-r-md'
+                )}
+              >
+                <div className="absolute w-full h-full bg-gradient-to-t from-black/60 to-transparent hover:from-[#5b0107a3] hover:from-20% hover:to-black/50 transition-colors ease-linear duration-300 inset-0" />
+                <div className="z-20">
+                  <div className="flex flex-col gap-2 p-3">
+                    <h3 className={cn(
+                      "text-sm md:text-base lg:text-lg sm:text-white font-semibold text-transparent",
+                      index === currentSlide && "text-white"
+                    )}>{course.title}</h3>
+                    <p
+                      className={cn(
+                        "text-xs md:text-sm sm:text-gray-200 text-transparent overflow-hidden transition-all duration-[1000] ease-in-out line-clamp-2 group-hover:line-clamp-none max-h-10 group-hover:max-h-40",
+                        index === currentSlide && "text-gray-200"
+                      )}
+                    >
+                      {course.description}
+                    </p>
+                    <span className={cn("text-xs md:text-sm sm:text-gray-100 text-transparent", index === currentSlide && "text-gray-100")}>{course.level} </span>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

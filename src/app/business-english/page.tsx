@@ -14,13 +14,13 @@ export default function AboutPage() {
       />
 
       {/* Hero Section */}
-      <Container className="px-4 md:px-0">
+      <Container className="px-4 2xl:px-0">
         <section className=" mb-[80px]  px-[20] md:px-[50px] mt-8 rounded-xl md:rounded-md bg-white pt-0 pb-[20px] md:py-[50px]">
           <div className=" relative w-full h-fit rounded-t-2xl md:rounded-b-2xl overflow-hidden ">
             <img
-              src="/courses/general-english/hero.png"
-              alt="General English Course Hero"
-              className="h-[350px] md:h-[500px] max-h-[500px] object-cover rounded-t-md md:rounded-b-md block"
+              src="/courses/business-english/hero.jpg"
+              alt="Business English Course Hero"
+              className="h-[350px] md:h-[500px] max-h-[500px] w-full object-cover rounded-t-md md:rounded-b-md block"
             />
             {/* Logo overlay */}
             <img

@@ -15,34 +15,20 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Mr. Ahmad Mohammed",
-      title: "English language lecturer",
-      image: "/placeholder.png",
-      content: "The book offers practical exercises and examples to enhance pronunciation and build confidence in using the language. The book offers practical exercises and examples to enhance pronunciation and build confidence in using the language.",
+      name: "Dr. Hosny Nassar",
+      title: "Physiotherapist at Pyramids Football Clubr",
+      image: "/images/testimonials/id_1.jpg",
+      content: "The instructor was really professional, and I recommend Englisher to anyone who wants to improve their English.",
+      contentAr: "المحاضر كان فعلاً محترف، وأنصح أي حد حابب يطوّر مستواه في الإنجليزي إنه يتعلم مع Englisher.",
       rating: 4.3,
     },
     {
       id: 2,
-      name: "Mr. Ahmad Mohammed",
-      title: "English language lecturer",
-      image: "/placeholder.png",
-      content: "The book offers practical exercises and examples to enhance pronunciation and build confidence in using the language. The book offers practical exercises and examples to enhance pronunciation and build confidence in using the language.",
-      rating: 4.3,
-    },
-    {
-      id: 3,
-      name: "Mr. Ahmad Mohammed",
-      title: "English language lecturer",
-      image: "/placeholder.png",
-      content: "The book offers practical exercises and examples to enhance pronunciation and build confidence in using the language. The book offers practical exercises and examples to enhance pronunciation and build confidence in using the language.",
-      rating: 4.3,
-    },
-    {
-      id: 4,
-      name: "Mr. Ahmad Mohammed",
-      title: "English language lecturer",
-      image: "/placeholder.png",
-      content: "The book offers practical exercises and examples to enhance pronunciation and build confidence in using the language. The book offers practical exercises and examples to enhance pronunciation and build confidence in using the language.",
+      name: "Mr. Taha Shogaa",
+      title: "Revenue Manager at Rotana Hotel Dubai",
+      image: "/images/testimonials/id_2.jpg",
+      content: "Englisher Academy is one of the most professional and reliable educational platforms I’ve come across. Their commitment to quality, clarity, and learner engagement is truly impressive. ",
+      contentAr: "أكاديمية إنجلشر من أكتر الأماكن اللي شُغلها احترافي ويتوثق فيه. شفت بنفسي قد إيه بيهتموا بجودة المحتوى وتوصيله بشكل بسيط وواضح.",
       rating: 4.3,
     },
   ];
@@ -144,27 +130,29 @@ const TestimonialsSection = () => {
           }}
         >
           {testimonials.map((testimonial) => (
-            <SwiperSlide key={testimonial.id}>
-              <div className="bg-white text-black rounded-lg p-6 h-full">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-16 h-16 rounded-lg overflow-hidden bg-gray-200">
-                    <img
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      className="w-full h-full object-cover"
-                    />
+            <SwiperSlide key={testimonial.id} className="!h-auto">
+              <div className="bg-white text-black rounded-lg p-6 !h-full flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="w-16 h-16 rounded-lg overflow-hidden bg-gray-200">
+                      <img
+                        src={testimonial.image}
+                        alt={testimonial.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-lg">
+                        <span className="text-red-500">Mr.</span>{" "}
+                        {testimonial.name.replace("Mr. ", "")}
+                      </h3>
+                      <p className="text-gray-600 text-sm">{testimonial.title}</p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-bold text-lg">
-                      <span className="text-red-500">Mr.</span>{" "}
-                      {testimonial.name.replace("Mr. ", "")}
-                    </h3>
-                    <p className="text-gray-600 text-sm">{testimonial.title}</p>
-                  </div>
+                  <p className="text-gray-700 text-sm leading-relaxed mb-4">
+                    {testimonial.content}
+                  </p>
                 </div>
-                <p className="text-gray-700 text-sm leading-relaxed mb-4">
-                  {testimonial.content}
-                </p>
                 <div className="flex items-center gap-2">
                   <span className="text-sm font-semibold">
                     ({testimonial.rating})

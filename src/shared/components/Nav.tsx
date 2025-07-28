@@ -43,10 +43,18 @@ const Nav = () => {
     >
       <div className="flex items-center justify-between">
         <Link href="/" className="block">
-          <img
+          {/* <img
             src="/logo.png"
             alt="Englisher - English Language Learning Platform"
             className="h-8 sm:h-10 w-24 sm:w-32 object-contain rounded"
+          /> */}
+          <video 
+            src="/videos/logo-animation.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="h-8 sm:h-10 w-24 sm:w-32 object-cover"
           />
         </Link>
 
