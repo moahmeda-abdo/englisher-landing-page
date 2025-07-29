@@ -20,7 +20,7 @@ const TestimonialsSection = () => {
       image: "/images/testimonials/id_1.jpg",
       content: "The instructor was really professional, and I recommend Englisher to anyone who wants to improve their English.",
       contentAr: "المحاضر كان فعلاً محترف، وأنصح أي حد حابب يطوّر مستواه في الإنجليزي إنه يتعلم مع Englisher.",
-      rating: 4.3,
+      rating: 5,
     },
     {
       id: 2,
@@ -29,8 +29,17 @@ const TestimonialsSection = () => {
       image: "/images/testimonials/id_2.jpg",
       content: "Englisher Academy is one of the most professional and reliable educational platforms I’ve come across. Their commitment to quality, clarity, and learner engagement is truly impressive. ",
       contentAr: "أكاديمية إنجلشر من أكتر الأماكن اللي شُغلها احترافي ويتوثق فيه. شفت بنفسي قد إيه بيهتموا بجودة المحتوى وتوصيله بشكل بسيط وواضح.",
-      rating: 4.3,
+      rating: 5,
     },
+    {
+      id: 3,
+      name: "Mr. Mahmoud Ali",
+      title: "Manager at Rexos Hotels Alamein",
+      image: "/images/testimonials/id_3.jpg",
+      content: "I couldn’t be more satisfied with my experience in the one-to-one private business English program. The instructors were not only highly professional and well-prepared, but they also took the time to tailor each session to my specific goals",
+      contentAr: "بجد مبسوط جدًا من تجربتي في برنامج البزنس إنجلش الـ One-to-One. المُدرسين كانوا في قمة الاحترافية، وفعلاً مهتمين إني أستفيد على قد ما أقدر. كل محاضرة كانت معمولة مخصوص على حسب احتياجي وشغلي. شرحهم كان بسيط وعملي، وخلاني أفهم مصطلحات وأفكار بزنس معقدة بطريقة سهلة.",
+      rating: 5,
+    }
   ];
 
   const totalPages = testimonials.length;

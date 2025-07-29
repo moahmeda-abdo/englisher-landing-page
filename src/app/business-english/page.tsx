@@ -1,8 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import BreadCrumbs from "@/shared/components/BreadCrumbs";
 import Container from "@/shared/components/Container";
+import { Metadata } from "next";
 
-export default function AboutPage() {
+export const metadata: Metadata = {
+    title: "Business English Course | Englisher",
+};
+
+export default function BusinessEnglishPage() {
   return (
     <div className="bg-[#F3F3F3]">
       <BreadCrumbs

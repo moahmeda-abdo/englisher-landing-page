@@ -4,6 +4,11 @@ import BreadCrumbs from '@/shared/components/BreadCrumbs'
 import Container from '@/shared/components/Container'
 import React from 'react'
 import { ContactForm } from './components/ContactForm'
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "Contact Us | Englisher",
+};
 
 export default function Page() {
     const breadcrumbs = {

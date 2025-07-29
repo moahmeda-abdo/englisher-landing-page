@@ -85,7 +85,7 @@ export default function BlogsPage() {
 
         {/* Our Blogs Section */}
         <section className="pb-8 sm:pb-12 lg:pb-16">
-          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 sm:mb-8 gap-2">
+          <div className="flex flex-col justify-between items-start mb-6 gap-2">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black">
               <span className="text-red-600 font-extrabold">Our</span> Blogs
             </h2>
@@ -101,7 +101,7 @@ export default function BlogsPage() {
                 <article className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col">
                   {/* Blog Image */}
                   <div className="relative h-40 sm:h-48 lg:h-52 bg-gray-200 flex-shrink-0">
-                    <div className="absolute inset-0 w-full h-full bg-gradient-to-br from-black/80 to-[#3a0004] opacity-50 group-hover:opacity-40 transition-opacity duration-300" />
+                    {/* <div className="absolute inset-0 w-full h-full bg-gradient-to-br from-black/80 to-[#3a0004] opacity-50 group-hover:opacity-40 transition-opacity duration-300" /> */}
                     <img
                       src={blog.image}
                       alt={blog.title}
@@ -109,7 +109,7 @@ export default function BlogsPage() {
                     />
                     {/* Recent Blog Badge */}
                     {blog.isRecent && (
-                      <span className="absolute top-2 sm:top-3 left-2 sm:left-3 border-2 font-bold border-red-600 text-red-600 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full text-xs bg-red-200/50">
+                      <span className="absolute top-2 sm:top-3 left-2 sm:left-3 border-[1px] font-bold border-red-50 text-red-500 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full text-xs bg-white">
                         new
                       </span>
                     )}

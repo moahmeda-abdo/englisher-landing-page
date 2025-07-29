@@ -99,8 +99,8 @@ export default function HomePage() {
         {/* Courses Section */}
         <CoursesSection />
 
-        {/* Blogs Section */}
-        <BlogsSection />
+        {/* Testimonials Section */}
+        <TestimonialsSection />
 
         {/* Contact Section */}
         <ContactSection />
@@ -108,9 +108,8 @@ export default function HomePage() {
         {/* Our Partners Section */}
         <OurPartnersSection />
 
-        {/* Future sections will go here */}
-
-        <TestimonialsSection />
+        {/* Blogs Section */}
+        <BlogsSection />
 
       </main>
 

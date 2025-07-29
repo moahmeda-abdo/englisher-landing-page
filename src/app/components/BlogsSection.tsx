@@ -68,33 +68,35 @@ export default function BlogsSection() {
               <div className="w-full">
                 <div className="flex gap-4 flex-col lg:flex-row">
                   {currentBlogs.map((blog) => (
-                    <div
-                      key={blog.id}
-                      className="cursor-pointer w-full lg:w-1/2 flex flex-col-reverse sm:flex-row-reverse lg:flex-row-reverse items-stretch bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                      <div className="flex-1 p-4 sm:p-6 flex flex-col justify-between">
-                        <div>
-                          <h3 className="text-[#0C0C0C] truncate max-w-[400px] text-lg lg:text-[24px] leading-[150%] mb-2 sm:mb-3 font-semibold line-clamp-2">
-                            {blog.title}
-                          </h3>
-                          <p className="text-[#555555] text-sm sm:text-base leading-[150%] mb-3 sm:mb-4 line-clamp-3 sm:line-clamp-4">
-                            {blog.content}
-                          </p>
+                    <Link key={blog.id} href={`/blogs/${blog.id}`} className="cursor-pointer w-full lg:w-1/2 flex flex-col-reverse sm:flex-row-reverse lg:flex-row-reverse items-stretch bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                      {/* <div
+                        className="cursor-pointer w-full lg:w-1/2 flex flex-col-reverse sm:flex-row-reverse lg:flex-row-reverse items-stretch bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"> */}
+                        <div className="flex-1 p-4 sm:p-6 flex flex-col justify-between">
+                          <div>
+                            <h3 className="text-[#0C0C0C] truncate max-w-[400px] text-lg lg:text-[24px] leading-[150%] mb-2 sm:mb-3 font-semibold line-clamp-2">
+                              {blog.title}
+                            </h3>
+                            <p className="text-[#555555] text-sm sm:text-base leading-[150%] mb-3 sm:mb-4 line-clamp-3 sm:line-clamp-4">
+                              {/* {blog.content} */}
+                              {blog.excerpt}
+                            </p>
+                          </div>
+                          <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-400">
+                            <span>Published at</span>
+                            <span className="font-medium">{blog.publishedDate} - {blog.publishedTime}</span>
+                          </div>
                         </div>
-                        <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-400">
-                          <span>Published at</span>
-                          <span className="font-medium">{blog.publishedDate} - {blog.publishedTime}</span>
+                        <div className="w-full sm:w-48 lg:w-56 h-48 sm:h-auto flex-shrink-0">
+                          <Image
+                            src={blog.image}
+                            alt={blog.title}
+                            width={250}
+                            height={250}
+                            className="w-full h-full object-cover"
+                          />
                         </div>
-                      </div>
-                      <div className="w-full sm:w-48 lg:w-56 h-48 sm:h-auto flex-shrink-0">
-                        <Image
-                          src={blog.image}
-                          alt={blog.title}
-                          width={250}
-                          height={250}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                    </div>
+                      {/* </div> */}
+                    </Link>
                   ))}
                 </div>
               </div>

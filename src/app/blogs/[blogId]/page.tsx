@@ -9,6 +9,11 @@ import { ImLinkedin2 } from "react-icons/im";
 import { BsWhatsapp } from "react-icons/bs";
 import BreadCrumbs from "@/shared/components/BreadCrumbs";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Blog Details | Englisher",
+};
 
 export default async function BlogDetailsPage({ params }: { params: Promise<{ blogId: string }> }) {
   const { blogId } = await params;

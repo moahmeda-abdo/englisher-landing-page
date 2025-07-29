@@ -55,11 +55,11 @@ export default function TestPageLayout({
 
                             {/* Mobile Content */}
                             <div className="p-4 sm:p-6">
-                                <img
+                                {logoImage && <img
                                     src={logoImage}
                                     alt="Logo"
                                     className="w-24 sm:w-32 object-cover rounded-md mb-4"
-                                />
+                                />}
 
                                 <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#0C0C0C] mb-4">
                                     <span className="text-[#E50616]">{highlight}</span> {heading}
@@ -129,11 +129,11 @@ export default function TestPageLayout({
 
                             <div className="w-1/2 pl-4 overflow-y-auto flex flex-col justify-between">
                                 <div>
-                                    <img
+                                    {logoImage && <img
                                         src={logoImage}
                                         alt="Logo"
                                         className="w-[150px] object-cover rounded-md block mb-4"
-                                    />
+                                    />}
 
                                     <h1 className="text-[32px] font-bold text-[#0C0C0C] mb-4">
                                         <span className="text-[#E50616]">{highlight}</span> {heading}
