@@ -1,13 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
+"use client"
+
 import React from "react";
+import { useTranslations } from "next-intl";
 
 export default function WhatWeOfferSection() {
+  const t = useTranslations();
+
   return (
     <section
       className="relative py-20 px-8 overflow-hidden h-[400px]"
       role="region"
       aria-labelledby="what-we-offer-heading">
-      
+
       <img
         src="/home/what-we-offer.png"
         alt=""
@@ -20,13 +25,12 @@ export default function WhatWeOfferSection() {
         <h2
           id="what-we-offer-heading"
           className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight">
-          What We Offer You
+          {t("whatWeOfferTitle")}
         </h2>
 
         {/* Description */}
         <p className="text-base md:text-lg text-gray-300 leading-relaxed mx-auto">
-          Personalized English courses, expert instructors, and flexible plans
-          — all designed to help you speak with clarity and confidence
+          {t("whatWeOfferDescription")}
         </p>
 
         {/* Decorative elements */}

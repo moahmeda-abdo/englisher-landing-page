@@ -1,15 +1,15 @@
 // import type { Metadata } from "next";
 import { Almarai } from "next/font/google";
 import "./globals.css";
-import Nav from "@/shared/components/Nav";
-import Footer from "@/shared/components/Footer";
-import WhatsAppButton from "./components/WhatsAppButton";
+// import Nav from "@/shared/components/Nav";
+// import Footer from "@/app/components/Footer";
+// import WhatsAppButton from "./components/WhatsAppButton";
 
 const almarai = Almarai({
-  subsets: ["latin"],
-  variable: "--font-almarai",
-  display: "swap",
-  weight: ["300", "400", "700", "800"],
+    subsets: ["latin"],
+    variable: "--font-almarai",
+    display: "swap",
+    weight: ["300", "400", "700", "800"],
 });
 
 // export const metadata: Metadata = {
@@ -18,23 +18,23 @@ const almarai = Almarai({
 // };
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en" className={`${almarai.variable} font-sans`}>
-      <body className="antialiased bg-[#F3F3F3] vsc-domain-localhost vsc-initialized">
-        <Nav />
-        {children}
-        <Footer />
+    return (
+        <html lang="en" className={`${almarai.variable} font-sans`}>
+            <body className="antialiased bg-[#F3F3F3] vsc-domain-localhost vsc-initialized">
+                {/* <Nav /> */}
+                {children}
+                {/* <Footer /> */}
 
-        {/* WhatsApp Button */}
-        <WhatsAppButton
-          phoneNumber="+201000041191"
-          message="Hello! I'm interested in learning English with Englisher Academy. Can you help me get started?"
-        />
-      </body>
-    </html>
-  );
+                {/* WhatsApp Button
+                <WhatsAppButton
+                    phoneNumber="+201000041191"
+                    message="Hello! I'm interested in learning English with Englisher Academy. Can you help me get started?"
+                /> */}
+            </body>
+        </html>
+    );
 }

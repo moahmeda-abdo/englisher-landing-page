@@ -1,7 +1,9 @@
 "use client";
+import { useTranslations } from "next-intl";
 import React, { useState } from "react";
 
 export default function ContactSection() {
+  const t = useTranslations();
   const [formData, setFormData] = useState({
     name: "",
     message: "",
@@ -41,7 +43,6 @@ export default function ContactSection() {
       setIsSubmitting(false);
     }
   };
-
   return (
     <section className="w-full h-[700px] flex items-center !bg-[#F3F3F3] relative">
       {/* Left Side - Dark Form Section */}
@@ -49,12 +50,10 @@ export default function ContactSection() {
         <div className="w-full max-w-md">
           <div className="mb-8">
             <h2 className="text-white text-3xl lg:text-4xl font-bold mb-4">
-              Send Us a Message
+              {t("contactSectionTitle")}
             </h2>
             <p className="text-gray-300 text-sm lg:text-base leading-relaxed">
-              A concise guide to mastering American English pronunciation with
-              essential techniques, practical exercises, and strategies for
-              confident, fluent communication.
+              {t("contactSectionSubtitle")}
             </p>
           </div>
 
@@ -69,7 +68,7 @@ export default function ContactSection() {
                 onChange={handleInputChange}
                 required
                 className="w-full px-4 py-3 bg-transparent border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-white transition-colors"
-                placeholder="Name"
+                placeholder={t("contactSectionNamePlaceholder")}
               />
             </div>
 
@@ -83,7 +82,7 @@ export default function ContactSection() {
                 required
                 rows={6}
                 className="w-full px-4 py-3 bg-transparent border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-white transition-colors resize-none"
-                placeholder="Message"
+                placeholder={t("contactSectionMessagePlaceholder")}
               />
             </div>
 
@@ -93,21 +92,19 @@ export default function ContactSection() {
                 type="submit"
                 disabled={isSubmitting}
                 className="bg-white text-black px-8 py-3 rounded-lg font-medium hover:bg-gray-200 transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed">
-                {isSubmitting ? "Sending..." : "Send"}
+                {isSubmitting ? t("contactSectionSendingButton") : t("contactSectionSendButton")}
               </button>
             </div>
 
             {/* Status Messages */}
             {submitStatus === "success" && (
               <div className="p-4 bg-green-900/30 border border-green-500 text-green-400 rounded-lg text-sm">
-                Thank you for your message! We&apos;ll get back to you within 24
-                hours.
+                {t("contactSectionSuccessMessage")}
               </div>
             )}
             {submitStatus === "error" && (
               <div className="p-4 bg-red-900/30 border border-red-500 text-red-400 rounded-lg text-sm">
-                Sorry, there was an error sending your message. Please try
-                again.
+                {t("contactSectionErrorMessage")}
               </div>
             )}
           </form>

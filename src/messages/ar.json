@@ -1,0 +1,272 @@
+{
+  "aboutBreadcrumbsHome": "الرئيسية",
+  "aboutBreadcrumbsAbout": "من نحن",
+  "aboutBreadcrumbsTitle": "حول إنجلشر",
+
+  "aboutHeading": "حول إنجلشر",
+
+  "aboutDescription1": "تأسست إنجليشير في عام 2019، وهي أكاديمية رائدة عبر الإنترنت مكرسة لتعزيز مهارات اللغة الإنجليزية والتواصل من خلال دورات شاملة في اللغة الإنجليزية للأعمال، وتدريب اللكنة، واللغة الإنجليزية المحادثة. نحن نقدم تدريبًا متخصصًا للأفراد والعملاء الشركات، مع تقديم برامج مصممة لتلبية الاحتياجات المتنوعة.",
+  "aboutDescription2": "مع سجل حافل من النجاح، قمنا بتدريب وتعليم الآلاف من المتعلمين من مصر والسعودية والإمارات، مما ساعدهم على تحسين الطلاقة والثقة والتواصل المهني. يقدم معلمونا الخبراء دروسًا تفاعلية وجذابة مصممة لتحسين النطق، وإتقان المصطلحات التجارية، وتعزيز المحادثات اليومية.",
+
+  "aboutStatsLearners": "متعلم ومستمع",
+  "aboutStatsCourses": "دورات عبر الإنترنت",
+  "aboutStatsEbooks": "كتب إلكترونية مع صوتيات",
+
+  "aboutMissionTitle": "مهمتنا",
+  "aboutMissionText": "مهمتنا هي تقديم دورات إنجليزية عبر الإنترنت استثنائية في مصر والإمارات والسعودية، يقودها معلمون ذوو خبرة ومنهج قوي. نسعى لإنشاء بيئة تعليمية تفاعلية عالية الجودة تبني الثقة ومهارات اللغة العملية من خلال التركيز على الدعم الشخصي والتطبيق في العالم الحقيقي.",
+
+  "aboutVisionTitle": "رؤيتنا",
+  "aboutVisionText": "أن نكون المزود الرائد للدورات الإنجليزية الافتراضية في مصر والإمارات والسعودية، معترف بنا لأساليبنا التعليمية المبتكرة والتزامنا بالتميز في تعليم اللغة، بينما نعد المتعلمين ليصبحوا متحدثين عالميين واثقين باللغة الإنجليزية.",
+
+  "aboutPartnersTitle": "شركاؤنا",
+  "aboutPartnerLondonAlt": "مدرسة لندن لتميز الأعمال",
+  "aboutPartnerOxfordAlt": "اختبار تحديد المستوى من أكسفورد",
+
+  "aboutImageHeroAlt": "صورة تعريفية بإنجلشر",
+  "aboutImageVisionAlt": "المهمة والرؤية",
+
+  "speakingTitle": "اختبار المحادثة",
+  "speakingBreadcrumbsHome": "الرئيسية",
+  "speakingBreadcrumbsPlacement": "اختبار تحديد المستوى",
+  "speakingHeroImage": "/placement-test/speaking-test.png",
+  "speakingLogoImage": "",
+  "speakingHeading": "الاختبار",
+  "speakingHighlight": "المحادثة",
+  "speakingDuration": "مدة الاختبار 20 دقيقة",
+  "speakingDescription": "نُجري اختبارات محادثة احترافية بواسطة ممتحنين معتمدين وفقًا لمعايير CEFR. تشمل تقييماتنا جميع المستويات (من A1 إلى C2) وتركز على الطلاقة، والقواعد، والمفردات، والنطق. نهدف إلى تقديم تقييمات دقيقة ومعترف بها عالميًا لدعم تطور اللغة لأغراض أكاديمية أو مهنية أو شخصية.",
+  "speakingSkillsListening": "الاستماع",
+  "speakingSkillsGrammar": "القواعد",
+  "speakingSkillsVocabulary": "المفردات",
+  "speakingSkillsPronunciation": "النطق",
+  "speakingReportText": "ستتلقى تقريرًا من أكاديمية إنجلشر عبر البريد الإلكتروني يوضح مستواك (من 1A إلى 2C)، ويمكنك استخدامه كمرجع دولي في أي مكان عمل.",
+  "speakingChartImage": "/placement-test/CEFR.png",
+  "speakingSkillsLabel": "يتم تقييمك في المهارات التالية.",
+
+  "placementTitle": "اختبار تحديد المستوى من أكسفورد",
+  "placementBreadcrumbsHome": "الرئيسية",
+  "placementBreadcrumbsPlacement": "اختبار تحديد المستوى",
+  "placementHeroImage": "/placement-test/oxford.png",
+  "placementLogoImage": "/placement-test/ox-pl.png",
+  "placementHeading": "اختبار تحديد المستوى",
+  "placementHighlight": "أوكسفورد",
+  "placementDuration": "مدة الاختبار 80 دقيقة",
+  "placementDescription": "اختبار تحديد المستوى من أكسفورد يتكيف مع أداء الطالب، حيث تتغير صعوبة الأسئلة حسب الإجابات. هذا يجعل التجربة أكثر دقة وتحفيزًا مقارنة بالاختبارات التقليدية. يتم تصحيح الإجابات تلقائيًا بعد كل مهمة، مما يتيح لك الحصول على النتيجة مباشرة. يتوفر الاختبار باللهجتين البريطانية والأمريكية، أو مزيج بينهما.",
+  "placementSkillsListening": "الاستماع",
+  "placementSkillsGrammar": "القواعد",
+  "placementSkillsVocabulary": "المفردات",
+  "placementSkillsPronunciation": "النطق",
+  "placementReportText": "ستتلقى تقريرًا من جامعة أوكسفورد عبر البريد الإلكتروني يوضح مستواك (من 1A إلى 2C)، ويمكنك استخدامه كمرجع دولي في أي مكان عمل.",
+  "placementChartImage": "/placement-test/CEFR.png",
+  "placementSkillsLabel": "يتم تقييمك في المهارات التالية.",
+
+  "phoneticsTitle": "أسس الصوتيات والنطق",
+  "phoneticsBreadcrumbsHome": "الرئيسية",
+  "phoneticsBreadcrumbsPage": "أسس الصوتيات والنطق",
+
+  "phoneticsAbout": "عن",
+  "phoneticsCourse": "الدورة",
+  "phoneticsAboutParagraph": "يوفر هذا الكتاب رؤى حول صوتيات اللهجة الأمريكية، مستخدمًا تقنيات حديثة وطرق بصرية لتبسيط فهم وتطبيق هذه الأصوات. وهو مصمم للمبتدئين في تعلم اللغة الإنجليزية، مع التركيز بشكل خاص على التحدث بطلاقة، بهدف بناء الثقة، وتحسين النطق، وجعل الصوتيات سهلة الفهم من خلال نهج مبسط وممتع.",
+
+  "phoneticsObjectives": "هدف الدورة",
+
+  "phoneticsObjective1Title": "إتقان الأساسيات",
+  "phoneticsObjective1Description": "تعلم كيفية تغيير لهجتك العادية للاستخدام اليومي والتحدث مثل الناطقين الأصليين الأمريكيين.",
+
+  "phoneticsObjective2Title": "إتقان النطق",
+  "phoneticsObjective2Description": "إتقان الأصوات الأساسية في الإنجليزية الأمريكية، بما في ذلك الأصوات الساكنة، والاحتكاكية، والمركبة، والأصوات الأنفية. فهم الأصوات المجهورة وغير المجهورة، وأصوات 'T'.",
+
+  "phoneticsObjective3Title": "أصوات الحروف المتحركة والثنائية",
+  "phoneticsObjective3Description": "تعرف على 11 صوتًا متحركًا و5 أصوات ثنائية في الإنجليزية الأمريكية العامة لتحقيق خطاب دقيق وطبيعي.",
+
+  "phoneticsDurationTitle": "مدة الدورة",
+  "phoneticsDurationDescription": "16 ساعة موزعة على 8 جلسات. ستتعلم مهارات متقدمة مثل الربط (ربط الكلمات بسلاسة) والتنغيم (لحن الجملة) بطريقة ممتعة وتفاعلية. ستشارك أيضًا في أنشطة ومحادثات لمساعدتك على تطبيق ما تعلمته عمليًا.",
+
+  "phoneticsParticipantsTitle": "عدد المشاركين",
+  "phoneticsParticipantsDescription": "تقتصر الدورة على 7 مشاركين كحد أقصى، لذا ستحصل على وقت كافٍ للتحدث، وتعليقات شخصية، ومتابعة مناسبة.",
+
+  "phoneticsExercisesTitle": "تمارين عملية",
+  "phoneticsExercisesDescription": "تتضمن كل جلسة مهمة تحدث تركز على الربط والتنغيم. ستقوم بتسجيل صوتك لتحديد وتصحيح الأخطاء. ستتلقى أيضًا متابعة وتعليقات عبر واتساب.",
+
+  "phoneticsInstructorTitle": "المدرب",
+  "phoneticsInstructorDescription": "ستتلقى التدريب من مدرب لهجة معتمد يحمل مؤهل CELTA من جامعة كامبريدج، ولديه خبرة واسعة في تدريب النطق الأمريكي.",
+
+  "phoneticsGoalTitle": "الهدف النهائي",
+  "phoneticsGoalDescription": "مساعدتك على التحدث بشكل طبيعي مثل الناطقين الأصليين، باستخدام النطق الصحيح بثقة وطلاقة. سيساهم ذلك في تعزيز وضوحك وثقتك في كل مرة تتحدث فيها الإنجليزية.",
+
+  "phoneticsContent": "محتوى الدورة",
+  "phoneticsSection": "الجلسة",
+
+  "phoneticsSession1": "أصوات T",
+  "phoneticsSession2": "الأصوات الثنائية (Diphthongs)",
+  "phoneticsSession3": "ضغط الكلمات",
+  "phoneticsSession4": "أنواع ضغط الجمل",
+  "phoneticsSession5": "الاختزال (صوت الشوا والأشكال المختصرة)",
+  "phoneticsSession6": " التكيف الصوتي",
+  "phoneticsSession7": "التنغيم",
+  "phoneticsSession8": "قواعد الكلام المتصل",
+
+  "businessEnglishBreadcrumbTitle": "الإنجليزية للأعمال",
+  "businessEnglishBreadcrumbHome": "الرئيسية",
+  "businessEnglishAbout": "عن",
+  "businessEnglishCourse": "الدورة",
+  "businessEnglishCourseDescription": "طوال هذه الدورة، في اللغة الإنجليزية للأعمال، ستتعلّم المهارات اللغوية والتواصلية الأساسية للنجاح في بيئة العمل. بدءًا من كتابة الإيميلات المهنية إلى المشاركة في الاجتماعات رفيعة المستوى، ستتعلم كيف تتواصل بوضوح وثقة وتأثير.كما ستطوّر مهاراتك في التحدث أمام الجمهور والعروض التقديمية، مما يساعدك على إيصال رسائل قوية تترك أثرًا لدى جمهور الأعمال الدولي. وبنهاية الدورة، ستكون مجهزًا بالمفردات والأسلوب والاستراتيجيات التي تمكّنك من النجاح في أي بيئة مهنية",
+  "businessEnglishCertificationTitle": "شهادة",
+  "businessEnglishCertificationDescription": "عند الانتهاء بنجاح من مرحلة الدورة (3 أشهر)، ستتلقى شهادة رسمية.",
+  "businessEnglishFinalProjectTitle": "المشروع النهائي",
+  "businessEnglishFinalProjectDescription": "عند الانتهاء بنجاح من مرحلة الدورة (3 أشهر)، ستتلقى شهادة رسمية.",
+  "businessEnglishWeeklyAssignmentsTitle": "واجبات أسبوعية",
+  "businessEnglishWeeklyAssignmentsDescription": "عند الانتهاء بنجاح من مرحلة الدورة (3 أشهر)، ستتلقى شهادة رسمية.",
+
+  "generalEnglishBreadcrumbTitle": "الإنجليزية العامة",
+  "generalEnglishBreadcrumbHome": "الرئيسية",
+  "generalEnglishAbout": "عن",
+  "generalEnglishCourse": "الدورة",
+  "generalEnglishCourseDescription": " في هذه الدورة لتعلّم اللغة الإنجليزية العامة، ستبني أساسًا قويًا في القواعد والمفردات وتكوين الجمل. ستمارس المهارات اللغوية الأربع: الاستماع، التحدث، القراءة، والكتابة — مما يساعدك على التواصل بثقة ووضوح في حياتك اليومية.تشمل الدورة تدريبات تفاعلية ومواقف واقعية لتحسين طلاقتك خطوة بخطوة",
+  "generalEnglishCertificationTitle": "شهادة",
+  "generalEnglishCertificationDescription": "عند الانتهاء بنجاح من مرحلة الدورة (3 أشهر)، ستتلقى شهادة رسمية.",
+  "generalEnglishFinalProjectTitle": "المشروع النهائي",
+  "generalEnglishFinalProjectDescription": "عند الانتهاء بنجاح من مرحلة الدورة (3 أشهر)، ستتلقى شهادة رسمية.",
+  "generalEnglishWeeklyAssignmentsTitle": "الواجبات الأسبوعية",
+  "generalEnglishWeeklyAssignmentsDescription": "عند الانتهاء بنجاح من مرحلة الدورة (3 أشهر)، ستتلقى شهادة رسمية.",
+
+  "englishConversationBreadcrumbTitle": "محادثة باللغة الإنجليزية",
+  "englishConversationBreadcrumbHome": "الرئيسية",
+  "englishConversationAbout": "عن",
+  "englishConversationCourse": "الدورة",
+  "englishConversationAboutText": "في دورة المحادثة، ستقوم بتطوير مهاراتك في التحدث باللغة الإنجليزية من خلال مناقشات ممتعة وأنشطة تفاعلية. وبقيادة مدربين ذوي خبرة، ستتناول مجموعة متنوعة من المواضيع، وتحسّن طلاقتك، وتعزز من استراتيجياتك في المحادثة. ومع نهاية الدورة، ستكون أكثر ثقة وتمكنًا من خوض محادثات هادفة باللغة الإنجليزية",
+  "englishConversationCertificationTitle": "شهادة",
+  "englishConversationCertificationDescription": "عند الانتهاء بنجاح من مرحلة الدورة (3 أشهر)، ستتلقى شهادة رسمية.",
+  "englishConversationFinalProjectTitle": "المشروع النهائي",
+  "englishConversationFinalProjectDescription": "عند الانتهاء بنجاح من مرحلة الدورة (3 أشهر)، ستتلقى شهادة رسمية.",
+  "englishConversationWeeklyAssignmentsTitle": "واجبات أسبوعية",
+  "englishConversationWeeklyAssignmentsDescription": "عند الانتهاء بنجاح من مرحلة الدورة (3 أشهر)، ستتلقى شهادة رسمية.",
+
+  "contactTitle": "اتصل ",
+  "contactForm": "نموذج",
+  "contactNamePlaceHolder": "اسمك*",
+  "contactPhonePlaceHolder": "رقم الهاتف*",
+  "contactEmailPlaceHolder": "البريد الإلكتروني*",
+  "contactMessagePlaceHolder": "رسالتك*",
+  "contactSubmit": "إرسال الرسالة",
+
+  "aboutUsSectionTitle": "معلومات عنا",
+  "aboutUsTag": "إنجلشر",
+  "aboutUsDescription": "تأسست في عام 2019، إنجلشر هي أكاديمية عبر الإنترنت رائدة مكرسة لتعزيز مهارات اللغة الإنجليزية والتواصل من خلال دورات شاملة في الإنجليزية للأعمال، تدريب اللكنة، والإنجليزية المحادثة. نقدم تدريبًا متخصصًا للأفراد والعملاء الشركات، مع تقديم برامج مصممة لتلبية الاحتياجات المتنوعة.",
+  "aboutUsLearnerCount": "متعلم ومستمع",
+  "aboutUsLearnMore": "تعلم المزيد",
+
+  "blogsSectionTitle": "مدوناتنا",
+  "blogsSectionSubtitle": "دليل موجز لإتقان نطق اللغة الإنجليزية الأمريكية مع تقنيات أساسية، تمارين عملية، واستراتيجيات للتواصل الواثق والطليق.",
+  "blogsSectionSearchPlaceholder": "ابحث عن مقال ...",
+  "blogsSectionPublishedLabel": "تاريخ النشر",
+  "blogsSectionDiscoverMore": "اكتشف المزيد",
+
+  "contactSectionTitle": "أرسل لنا رسالة",
+  "contactSectionSubtitle": "دليل موجز لإتقان نطق اللغة الإنجليزية الأمريكية مع تقنيات أساسية، تمارين عملية، واستراتيجيات للتواصل الواثق والطليق.",
+  "contactSectionNamePlaceholder": "الاسم",
+  "contactSectionMessagePlaceholder": "الرسالة",
+  "contactSectionSendButton": "إرسال",
+  "contactSectionSendingButton": "جاري الإرسال...",
+  "contactSectionSuccessMessage": "شكرًا على رسالتك! سنقوم بالرد خلال 24 ساعة.",
+  "contactSectionErrorMessage": "عذرًا، حدث خطأ أثناء إرسال الرسالة. يرجى المحاولة مرة أخرى.",
+
+  "ourPartnersTitle": "شركاؤنا",
+  "ourPartnersDescription": "دليل مختصر لإتقان نطق الإنجليزية الأمريكية باستخدام تقنيات أساسية، وتمارين عملية، واستراتيجيات للتواصل بطلاقة وثقة.",
+  "ourPartnersLondonAlt": "مدرسة لندن لتميز الأعمال",
+  "ourPartnersOxfordAlt": "اختبار تحديد المستوى من أكسفورد",
+
+  "whatWeOfferTitle": "ماذا نقدم لك",
+  "whatWeOfferDescription": "دورات إنجليزية مخصصة، ومدربون محترفون، وخطط مرنة — كل ذلك لمساعدتك على التحدث بوضوح وثقة",
+
+  "blogNotFoundTitle": "المدونة غير موجودة",
+  "blogNotFoundDescription": "المدونة التي تبحث عنها غير موجودة.",
+  "backToBlogs": "العودة إلى المدونات",
+  "blogBreadcrumbsTitle": "مدوناتنا",
+  "blogBreadcrumbsHome": "الرئيسية",
+  "blogBreadcrumbsBlogs": "المدونات",
+  "blogBreadcrumbsDetails": "تفاصيل المدونة",
+  "blogPublishedOn": "نُشرت في",
+  "blogShareOn": "شارك على:",
+  "whatsappShareMessage": "مرحبًا! أنا مهتم بتعلم اللغة الإنجليزية مع أكاديمية إنجلشر.",
+
+  "highlightedBlogLabel": "مدونة مميزة",
+  "highlightedBlogParagraph1": "الانتظار في الصف، الجلوس في المقعد الأوسط، الطعام، التأخيرات — هناك قائمة طويلة من الأشياء المزعجة عند السفر بالطائرة.",
+  "highlightedBlogParagraph2": "وإليك أمرًا آخر يزعج الكثير منا — انسداد الأذنين. يُطلق عليه أحيانًا \"أذن الطائرة\"، أو يُعرف باسم \"الرضح الضغطي للأذن\". لكن لماذا يحدث هذا؟ وماذا يمكننا أن نفعل حيال ذلك؟",
+
+  "learnMore": "اعرف المزيد",
+  "our": "لدينا",
+  "blogs": "مدونات",
+  "blogsLabel": "مدونة / مدونات",
+  "newLabel": "جديد",
+  "noBlogs": "لا توجد مدونات متاحة",
+  "noBlogsDescription": "تحقق لاحقًا للحصول على منشورات وأفكار جديدة.",
+
+  "heroTag1": "تحدث بثقة",
+  "heroTitle1": "الأكاديمية رقم 1 عبر الإنترنت لتعلم الإنجليزية المهنية والتحدث بثقة",
+  "heroDescription1": "ابدأ رحلتك في تعلم اللغة الإنجليزية بثقة — نحن معك في كل خطوة، أينما كنت.",
+  "heroButtonText1": "اعرف المزيد",
+
+  "heroTag2": "إتقان الإنجليزية",
+  "heroTitle2": "حوّل مسيرتك المهنية بمهارات التواصل الإنجليزية الاحترافية",
+  "heroDescription2": "انضم إلى آلاف الطلاب الذين حسّنوا إجادتهم للإنجليزية وتقدّموا في حياتهم المهنية.",
+  "heroButtonText2": "ابدأ التعلم",
+
+  "heroTag3": "مجتمع عالمي",
+  "heroTitle3": "تواصل مع متعلمين من جميع أنحاء العالم وتدرّب على الإنجليزية معًا",
+  "heroDescription3": "استمتع بتجربة تعليمية تفاعلية مع مجتمع عالمي من متعلمي اللغة الإنجليزية ومدربين خبراء.",
+  "heroButtonText3": "انضم إلى المجتمع",
+
+  "heroTag4": "الإنجليزية للأعمال",
+  "heroTitle4": "تميّز في حياتك المهنية من خلال إتقان اللغة الإنجليزية للأعمال",
+  "heroDescription4": "طوّر مهارات اللغة اللازمة للعروض والاجتماعات والتواصل المهني.",
+  "heroButtonText4": "استكشف الدورات",
+
+  "heroTag5": "نطق مثالي",
+  "heroTitle5": "تحدث بوضوح وثقة من خلال نطق إنجليزي مثالي",
+  "heroDescription5": "أتقن أصوات اللغة الإنجليزية من خلال برنامجنا الشامل في الصوتيات والنطق.",
+  "heroButtonText5": "ابدأ التحدث",
+
+  "heroAriaHeroSection": "قسم البطل لأكاديمية تعلم اللغة الإنجليزية",
+  "heroAriaBackground": "خلفية تعلم اللغة الإنجليزية",
+  "heroSliderNavigation": "تنقل شريط البطل",
+
+  "footerDescription": "تعلم أسرار النطق الأمريكي وتحدث بطلاقة مع Accent، الكتاب المصمم خصيصًا للمبتدئين الذين يرغبون في التحدث بالإنجليزية بثقة وطلاقة.",
+  "footerQuickLinks": "روابط سريعة",
+  "footerHome": "الرئيسية",
+  "footerBlogs": "المدونة",
+  "footerAbout": "من نحن",
+  "footerContact": "اتصل بنا",
+  "footerCourses": "الدورات",
+  "footerPlacementTest": "اختبار تحديد المستوى",
+  "footerContactTitle": "تواصل معنا",
+  "footerCopyright": "إنجليشر © 2025. جميع الحقوق محفوظة.",
+  "coursesTitle": "اكتشف دوراتنا",
+  "coursesSubtitle": "تعلم أسرار إتقان اللكنة الأمريكية وتحدث بطلاقة مع 'Accent'، كتاب مصمم خصيصًا للمبتدئين الذين يتطلعون للتحدث باللغة الإنجليزية بثقة وطلاقة. يقدم هذا الكتاب رؤى حول الصوتيات.",
+  "coursesSearchPlaceholder": "ابحث عن الدورات ...",
+
+  "courseGeneralTitle": "الإنجليزية العامة",
+  "courseGeneralDescription": "في هذه الدورة، ستبني أساسًا قويًا في القواعد والمفردات ومهارات اللغة للتواصل اليومي.",
+  "courseGeneralLevel": "لكل المستويات",
+
+  "courseConversationTitle": "المحادثة الإنجليزية",
+  "courseConversationDescription": "في دورات المحادثة لدينا، ستتدرب على التحدث باللغة الإنجليزية بثقة وطلاقة.",
+  "courseConversationLevel": "للمستوى المتوسط",
+
+  "courseBusinessTitle": "الإنجليزية للأعمال",
+  "courseBusinessDescription": "من خلال دورات الإنجليزية للأعمال، ستتقن مهارات اللغة والتواصل اللازمة للنجاح المهني.",
+  "courseBusinessLevel": "للمستوى المتقدم",
+  "contactSubtitle":"بنا",
+
+
+
+
+
+
+
+  "navHome": "الرئيسية",
+  "navAbout": "تعرف علينا",
+  "navContact": "تواصل مع خبرائنا",
+  "navBlogs": " المدونات ",
+  "navCourses": "الدورات التعليمية",
+  "navPlacementTest": "اختبار تحديد المستوى "
+}

@@ -1,0 +1,276 @@
+{
+  "aboutBreadcrumbsHome": "Home",
+  "aboutBreadcrumbsAbout": "About",
+  "aboutBreadcrumbsTitle": "About Englisher",
+
+  "aboutHeading": "About Englisher",
+
+  "aboutDescription1": "Founded in 2019, Englisher is a premier online academy dedicated to enhancing English and communication skills through comprehensive Business English, Accent Training, and Conversational English courses. We provide expert training for both individuals and corporate clients, offering tailored programs to meet diverse needs.",
+  "aboutDescription2": "With a strong track record of success, we have coached and taught thousands of learners from Egypt, Saudi Arabia, and the UAE, helping them improve fluency, confidence, and professional communication. Our expert instructors deliver engaging, interactive lessons designed to refine pronunciation, master business jargon, and enhance everyday conversations.",
+
+  "aboutStatsLearners": "learner and listener",
+  "aboutStatsCourses": "Online Courses",
+  "aboutStatsEbooks": "E - Books With Audios",
+
+  "aboutMissionTitle": "Our Mission",
+  "aboutMissionText": "Our mission is to deliver exceptional Online English courses in Egypt, UAE, and Saudi Arabia, led by experienced instructors and a robust curriculum. We strive to create a high-quality, interactive learning environment that builds confidence and practical language skills by focusing on personalized support and real-world application.",
+
+  "aboutVisionTitle": "Our Vision",
+  "aboutVisionText": "To be the leading provider of virtual English courses in Egypt, UAE, and Saudi Arabia, recognized for our innovative teaching methods and commitment to excellence in language education, while preparing learners to become confident global English speakers.",
+
+  "aboutPartnersTitle": "Our Partners",
+  "aboutPartnerLondonAlt": "London School of Business Excellence",
+  "aboutPartnerOxfordAlt": "Oxford Placement Test",
+
+  "aboutImageHeroAlt": "About Englisher Placeholder",
+  "aboutImageVisionAlt": "Mission and Vision",
+
+  "speakingTitle": "Speaking Test",
+  "speakingBreadcrumbsHome": "Home",
+  "speakingBreadcrumbsPlacement": "Placement Test",
+  "speakingHeroImage": "/placement-test/speaking-test.png",
+  "speakingLogoImage": "",
+  "speakingHeading": "Test",
+  "speakingHighlight": "Speaking",
+  "speakingDuration": "Test duration 20 minutes",
+  "speakingDescription": "We provide professional speaking examinations conducted by certified examiners following the CEFR standards. Our assessments cover all levels (A1 to C2) and valuate fluency, grammar, vocabulary, and pronunciation. With a focus on practical communication, we deliver reliable and globally recognized evaluations to support language development for academic, professional, or personal growth.",
+  "speakingSkillsListening": "Listening",
+  "speakingSkillsGrammar": "Grammar",
+  "speakingSkillsVocabulary": "Vocabulary",
+  "speakingSkillsPronunciation": "Pronunciation",
+  "speakingReportText": "You will receive a report from Englisher Academy via email stating your level (from 1A to 2C), and you can use it as an international reference in any workplace.",
+  "speakingChartImage": "/placement-test/CEFR.png",
+  "speakingSkillsLabel": "You are evaluated on skills.",
+  "placementTitle": "Oxford Placement Test",
+  "placementBreadcrumbsHome": "Home",
+  "placementBreadcrumbsPlacement": "Placement Test",
+  "placementHeroImage": "/placement-test/oxford.png",
+  "placementLogoImage": "/placement-test/ox-pl.png",
+  "placementHeading": "Placement Test",
+  "placementHighlight": "Oxford",
+  "placementDuration": "Test duration 80 minutes",
+  "placementDescription": "The Oxford Placement Test is computer adaptive, which means that the test adjusts the difficulty of questions based on the student’s responses. This makes it more motivating and ensures that it gives a more precise measurement than traditional placement tests. Answers are automatically marked after each task, giving you an instant result once the test is complete. The test is available in British and American English in four different combinations: 100% British English, 100% American English or a mix.",
+  "placementSkillsListening": "Listening",
+  "placementSkillsGrammar": "Grammar",
+  "placementSkillsVocabulary": "Vocabulary",
+  "placementSkillsPronunciation": "Pronunciation",
+  "placementReportText": "You will receive a report from Oxford University via email stating your level (from 1A to 2C), and you can use it as an international reference in any workplace.",
+  "placementChartImage": "/placement-test/CEFR.png",
+  "placementSkillsLabel": "You are evaluated on skills.",
+
+  "phoneticsTitle": "Foundations of Phonetics and Pronunciation",
+  "phoneticsBreadcrumbsHome": "Home",
+  "phoneticsBreadcrumbsPage": "Foundations of Phonetics and Pronunciation",
+
+  "phoneticsAbout": "About",
+  "phoneticsCourse": "Course",
+  "phoneticsAboutParagraph": "This book provides insights into the phonetics of the American accent, utilizing modern techniques and visual methods to simplify understanding and application of these sounds. It is tailored for beginners in English learning, particularly focusing on fluent speaking, aiming to build confidence, improve pronunciation, and make phonetics easy to grasp through a simplified and enjoyable approach.",
+
+  "phoneticsObjectives": "Objectives",
+
+  "phoneticsObjective1Title": "Mastering Fundamentals",
+  "phoneticsObjective1Description": "Learn to change your regular accent for everyday use and speak like an American native.",
+
+  "phoneticsObjective2Title": "Pronunciation Proficiency",
+  "phoneticsObjective2Description": "Master key American English sounds, including stop-fricative, affricate, and nasal sounds. Understand voiced and unvoiced sounds, and the \"T\" sounds.",
+
+  "phoneticsObjective3Title": "Vowel and Diphthong Sounds",
+  "phoneticsObjective3Description": "Get familiar with the 11 vowel sounds and 5 diphthongs in General American English for accurate and natural speech.",
+
+  "phoneticsDurationTitle": "Course Duration",
+  "phoneticsDurationDescription": "16 hours across 8 sessions. You'll learn advanced skills like linking (connecting words smoothly) and intonation (sentence melody) in a fun and interactive way. You'll also participate in activities and conversations to help you apply what you learn practically.",
+
+  "phoneticsParticipantsTitle": "Number of Participants",
+  "phoneticsParticipantsDescription": "The course is limited to a maximum of 7 participants so you're guaranteed enough speaking time, personalized feedback, and proper follow-up.",
+
+  "phoneticsExercisesTitle": "Practical Exercises",
+  "phoneticsExercisesDescription": "Each session includes a speaking assignment focusing on linking and intonation. You'll record your voice to identify and correct mistakes. You'll also receive follow-up and feedback via WhatsApp.",
+
+  "phoneticsInstructorTitle": "Instructor",
+  "phoneticsInstructorDescription": "You'll be coached by a certified Accent Coach with a CELTA qualification from Cambridge University, and extensive experience in American pronunciation training.",
+
+  "phoneticsGoalTitle": "Ultimate Goal",
+  "phoneticsGoalDescription": "To help you speak naturally like native speakers, using correct pronunciation confidently and fluently. This will boost your clarity and confidence every time you speak English.",
+
+  "phoneticsContent": "Course Content",
+  "phoneticsSection": "Section",
+
+  "phoneticsSession1": "T sounds",
+  "phoneticsSession2": "Diphthongs",
+  "phoneticsSession3": "Word stress",
+  "phoneticsSession4": "Sentence stress types",
+  "phoneticsSession5": "Reduction (Schwa and contracted forms)",
+  "phoneticsSession6": "Assimilation",
+  "phoneticsSession7": "Intonation",
+  "phoneticsSession8": "Connected speech rules",
+
+  "businessEnglishBreadcrumbTitle": "Business English",
+  "businessEnglishBreadcrumbHome": "Home",
+  "businessEnglishAbout": "About",
+  "businessEnglishCourse": "Course",
+  "businessEnglishCourseDescription": "Throughout this Business English course, you will master the language and communication skills essential for success in the corporate world. From writing professional emails to participating in high-level meetings, you’ll learn how to communicate with clarity, confidence, and impact. You’ll also sharpen your public speaking and presentation abilities, helping you deliver compelling messages that resonate with international business audiences. By the end of the course, you’ll be equipped with the vocabulary, tone, and communication strategies needed to thrive in any professional environment.",
+  "businessEnglishCertificationTitle": "Certification",
+  "businessEnglishCertificationDescription": "Upon successfully completing the course stage (3 months), you will receive an official certificate.",
+  "businessEnglishFinalProjectTitle": "Final Project",
+  "businessEnglishFinalProjectDescription": "Upon successfully completing the course stage (3 months), you will receive an official certificate.",
+  "businessEnglishWeeklyAssignmentsTitle": "Weekly Assignments",
+  "businessEnglishWeeklyAssignmentsDescription": "Upon successfully completing the course stage (3 months), you will receive an official certificate.",
+
+  "generalEnglishBreadcrumbTitle": "General English",
+  "generalEnglishBreadcrumbHome": "Home",
+  "generalEnglishAbout": "About",
+  "generalEnglishCourse": "Course",
+  "generalEnglishCourseDescription": "In this General English course, you will build strong foundations in grammar, vocabulary, and sentence structure. You’ll practice all four language skills: listening, speaking, reading, and writing — helping you communicate clearly and confidently in daily life. The course includes interactive exercises and real-life situations to improve your fluency step by step.",
+  "generalEnglishCertificationTitle": "Certification",
+  "generalEnglishCertificationDescription": "Upon successfully completing the course stage (3 months), you will receive an official certificate.",
+  "generalEnglishFinalProjectTitle": "Final Project",
+  "generalEnglishFinalProjectDescription": "Upon successfully completing the course stage (3 months), you will receive an official certificate.",
+  "generalEnglishWeeklyAssignmentsTitle": "Weekly Assignments",
+  "generalEnglishWeeklyAssignmentsDescription": "Upon successfully completing the course stage (3 months), you will receive an official certificate.",
+
+  "englishConversationBreadcrumbTitle": "English Conversation",
+  "englishConversationBreadcrumbHome": "Home",
+  "englishConversationAbout": "About",
+  "englishConversationCourse": "Course",
+  "englishConversationAboutText": "In our conversation course at ENGLISHER, you'll refine your spoken English skills through engaging discussions and interactive activities. Led by experienced instructors, you'll explore various topics, improve fluency, and enhance conversational strategies. By the course's end, you'll feel more confident and adept at engaging in meaningful conversations in English.",
+  "englishConversationCertificationTitle": "Certification",
+  "englishConversationCertificationDescription": "Upon successfully completing the course stage (3 months), you will receive an official certificate.",
+  "englishConversationFinalProjectTitle": "Final Project",
+  "englishConversationFinalProjectDescription": "Upon successfully completing the course stage (3 months), you will receive an official certificate.",
+  "englishConversationWeeklyAssignmentsTitle": "Weekly Assignments",
+  "englishConversationWeeklyAssignmentsDescription": "Upon successfully completing the course stage (3 months), you will receive an official certificate.",
+
+  "contactTitle": "Contact",
+  "contactForm": "Form",
+  "contactNamePlaceHolder": "Your Name*",
+  "contactPhonePlaceHolder": "Phone Number*",
+  "contactEmailPlaceHolder": "Email*",
+  "contactMessagePlaceHolder": "Message*",
+  "contactSubmit": "Send Message",
+
+  "aboutUsSectionTitle": "About Us",
+  "aboutUsTag": "Englisher",
+  "aboutUsDescription": "Founded in 2019, Englisher is a premier online academy dedicated to enhancing English and communication skills through comprehensive Business English, Accent Training, and Conversational English courses. We provide expert training for both individuals and corporate clients, offering tailored programs to meet diverse needs.",
+  "aboutUsLearnerCount": "learner and listener",
+  "aboutUsLearnMore": "Learn More",
+
+  "blogsSectionTitle": "Our Blogs",
+  "blogsSectionSubtitle": "A concise guide to mastering American English pronunciation with essential techniques, practical exercises, and strategies for confident, fluent communication.",
+  "blogsSectionSearchPlaceholder": "Search For Article ...",
+  "blogsSectionPublishedLabel": "Published at",
+  "blogsSectionDiscoverMore": "Discover More",
+
+  "contactSectionTitle": "Send Us a Message",
+  "contactSectionSubtitle": "A concise guide to mastering American English pronunciation with essential techniques, practical exercises, and strategies for confident, fluent communication.",
+  "contactSectionNamePlaceholder": "Name",
+  "contactSectionMessagePlaceholder": "Message",
+  "contactSectionSendButton": "Send",
+  "contactSectionSendingButton": "Sending...",
+  "contactSectionSuccessMessage": "Thank you for your message! We'll get back to you within 24 hours.",
+  "contactSectionErrorMessage": "Sorry, there was an error sending your message. Please try again.",
+
+  "ourPartnersTitle": "Our Partners",
+  "ourPartnersDescription": "A concise guide to mastering American English pronunciation with essential techniques, practical exercises, and strategies for confident, fluent communication.",
+  "ourPartnersLondonAlt": "London School of Business Excellence",
+  "ourPartnersOxfordAlt": "Oxford Placement Test",
+
+  "whatWeOfferTitle": "What We Offer You",
+  "whatWeOfferDescription": "Personalized English courses, expert instructors, and flexible plans — all designed to help you speak with clarity and confidence",
+
+  "blogNotFoundTitle": "Blog Not Found",
+  "blogNotFoundDescription": "The blog you are looking for does not exist.",
+  "backToBlogs": "Back to Blogs",
+  "blogBreadcrumbsTitle": "Our Blogs",
+  "blogBreadcrumbsHome": "Home",
+  "blogBreadcrumbsBlogs": "Blogs",
+  "blogBreadcrumbsDetails": "Blogs Details",
+  "blogPublishedOn": "Published on",
+  "blogShareOn": "Share on:",
+  "whatsappShareMessage": "Hello! I'm interested in learning English with Englisher Academy.",
+
+  "highlightedBlogLabel": "Highlighted Blog",
+  "highlightedBlogParagraph1": "Waiting in line, sitting in the middle seat, the food, delays — there's a long list of annoying things about flying on planes.",
+  "highlightedBlogParagraph2": "And here's another one that bothers a lot of us — getting blocked ears. It's sometimes called \"airplane ear,\" and may also be known as \"ear barotrauma.\" But why do we get it, and what can we do about it?",
+  "learnMore": "Learn More",
+  "our": "Our",
+  "blogs": "Blogs",
+  "blogsLabel": "blog(s)",
+  "newLabel": "new",
+  "noBlogs": "No blogs available",
+  "noBlogsDescription": "Check back later for new blog posts and insights.",
+
+  "heroTag1": "Speak With Confidence",
+  "heroTitle1": "Your number #1 online academy for learning professional English and speaking with confidence",
+  "heroDescription1": "Start your English learning journey with confidence — wherever you are, we're with you every step of the way.",
+  "heroButtonText1": "Learn More",
+
+  "heroTag2": "Master English",
+  "heroTitle2": "Transform your career with professional English communication skills",
+  "heroDescription2": "Join thousands of students who have improved their English proficiency and advanced their careers.",
+  "heroButtonText2": "Start Learning",
+
+  "heroTag3": "Global Community",
+  "heroTitle3": "Connect with learners worldwide and practice English together",
+  "heroDescription3": "Experience interactive learning with our global community of English learners and expert instructors.",
+  "heroButtonText3": "Join Community",
+
+  "heroTag4": "Business English",
+  "heroTitle4": "Excel in your professional life with business English mastery",
+  "heroDescription4": "Develop the language skills you need for presentations, meetings, and professional communication.",
+  "heroButtonText4": "Explore Courses",
+
+  "heroTag5": "Perfect Pronunciation",
+  "heroTitle5": "Speak clearly and confidently with perfect English pronunciation",
+  "heroDescription5": "Master the sounds of English with our comprehensive phonetics and pronunciation program.",
+  "heroButtonText5": "Start Speaking",
+
+  "heroAriaHeroSection": "English Learning Academy Hero Section",
+  "heroAriaBackground": "English learning background",
+  "heroSliderNavigation": "Hero slider navigation",
+
+  "footerDescription": "Learn the secrets of American pronunciation and speak fluently with Accent, a book designed specifically for beginners who want to speak English fluently and confidently.",
+  "footerQuickLinks": "Quick Links",
+  "footerHome": "Home",
+  "footerBlogs": "Blogs",
+  "footerAbout": "About",
+  "footerContact": "Contact Us",
+  "footerCourses": "Courses",
+  "footerPlacementTest": "Placement Test",
+  "footerContactTitle": "Contact Us",
+  "footerCopyright": "Englisher © 2025. All Rights Reserved.",
+
+  "coursesTitle": "Discover Our Courses",
+  "coursesSubtitle": "Learn the secrets of mastering the American accent and speak fluently with ‘Accent’ a book specially designed for beginners eager to speak English confidently and fluently. This book provides insights into the phonetic difference",
+  "coursesSearchPlaceholder": "Search For Courses ...",
+
+  "courseGeneralTitle": "General English",
+  "courseGeneralDescription": "In this course, you will build strong foundations in grammar, vocabulary, and language skills for everyday communication.",
+  "courseGeneralLevel": "For Every level",
+
+  "courseConversationTitle": "English Conversation",
+  "courseConversationDescription": "In our conversation courses, you will practice speaking English with confidence and fluency.",
+  "courseConversationLevel": "For Intermediate level",
+
+  "courseBusinessTitle": "Business English",
+  "courseBusinessDescription": "Through our Business English courses, you will master the language and communication skills needed for professional success.",
+  "courseBusinessLevel": "For Advanced level",
+  "contactSubtitle": "Us",
+
+  "contactPageTitle": "Contact Us",
+  "breadcrumbHome": "Home",
+  "breadcrumbContact": "Contact Us",
+  "contactPageImageAlt": "Contact illustration",
+
+
+
+
+
+
+
+  "navHome": "Home",
+  "navAbout": "About",
+  "navContact": "Contact Us",
+  "navBlogs": "Blogs",
+  "navCourses": "Courses",
+  "navPlacementTest": "Placement Test"
+}

@@ -4,10 +4,13 @@ import React from "react";
 import Link from "next/link";
 import { cn } from "@/lib/classnames/cn";
 import Container from "@/shared/components/Container";
-import {useCountUp} from "@/shared/hooks/useCountUp"
+import { useCountUp } from "@/shared/hooks/useCountUp"
+import { useLocale, useTranslations } from "next-intl";
 
 export default function AboutUsSection() {
-  const {count, ref} = useCountUp(12000, 1500);
+  const { count, ref } = useCountUp(12000, 1500);
+  const t = useTranslations();
+  const locale = useLocale();
 
   return (
     <section
@@ -21,33 +24,33 @@ export default function AboutUsSection() {
             <div className="relative flex flex-col lg:block">
               <div
                 className="relative mx-auto lg:mx-0 md:p-5 lg:bg-white rounded-sm"
-                style={{ width: "min(1026.97px, 90vw)" }}> 
+                style={{ width: "min(1026.97px, 90vw)" }}>
 
-                 {/* top bar */}
+                {/* top bar */}
                 <div className={cn(
                   "absolute top-0 left-0 w-[calc(100%-140px)] h-2 bg-black rounded-xl hidden lg:block"
                 )} />
-                
+
                 {/* right top corner*/}
                 <div className={cn(
                   "absolute top-0 right-0 w-[110px] h-2 bg-black rounded-xl hidden lg:block",
                   "after:absolute after:top-0 after:right-0 after:h-[110px] after:w-2 after:bg-black after:rounded-xl"
-                )}/>
+                )} />
 
-                 {/* bottom bar */}
+                {/* bottom bar */}
                 <div className={cn(
                   "absolute bottom-0 right-0 w-[calc(100%-140px)] h-2 bg-black rounded-xl hidden lg:block"
                 )} />
 
-                 {/* left bottom corner */}
+                {/* left bottom corner */}
                 <div className={cn(
                   "absolute bottom-0 left-0 w-[110px] h-2 bg-black rounded-xl hidden lg:block",
                   "after:absolute after:bottom-0 after:left-0 after:h-[110px] after:w-2 after:bg-black after:rounded-xl"
-                )}/>
+                )} />
 
                 <div className="relative">
                   <img
-                    src="/home/about-us.png"
+                    src={locale == "en" ? "/home/about-us.png" : "/home/about-us-ar.png"}
                     alt="English learning environment with modern workspace"
                     className="w-full object-contain lg:object-cover rounded-lg"
                     style={{ height: "min(653px, 50vh)" }}
@@ -57,9 +60,10 @@ export default function AboutUsSection() {
 
               <div
                 className={cn(
-                  "bg-white opacity-90 backdrop-blur-lg p-4 sm:p-6 md:p-8 rounded-lg shadow-xl z-10",
+                  "bg-white/80 backdrop-blur-xs p-4 sm:p-6 md:p-8 rounded-lg shadow-xl z-10",
                   "max-h-[500px] max-w-[700px] min-h-[400px] mx-auto -mt-[20vh] lg:mt-0",
-                  "lg:absolute lg:bottom-[-200px] lg:right-[-50px] lg:transform lg:-translate-x-10 lg:mx-0"
+                  "lg:absolute lg:bottom-[-150px] lg:transform lg:mx-0",
+                  locale === "en" ? ' lg:right-[-50px] lg:-translate-x-10' : ' lg:left-[-50px] lg:translate-x-10'
                 )}
               >
                 <div className="h-full flex flex-col justify-between">
@@ -73,27 +77,22 @@ export default function AboutUsSection() {
                     <h2
                       id="about-us-heading"
                       className="text-2xl sm:text-3xl md:text-4xl font-bold text-black leading-tight mb-4 sm:mb-6">
-                      About Us
+                      {t("aboutUsSectionTitle")}
                     </h2>
 
                     <p className="text-gray-700 text-sm sm:text-base leading-relaxed mb-6 sm:mb-8">
-                      Founded in 2019, Englisher is a premier online academy
-                      dedicated to enhancing English and communication skills
-                      through comprehensive Business English, Accent Training,
-                      and Conversational English courses. We provide expert
-                      training for both individuals and corporate clients,
-                      offering tailored programs to meet diverse needs.
+                      {t("aboutUsDescription")}
                     </p>
                   </div>
 
                   <div className="flex justify-center items-center gap-3 sm:gap-6 mb-6 sm:mb-8">
-                  {/* <div className="grid grid-cols-3 gap-3 sm:gap-6 mb-6 sm:mb-8"> */}
+                    {/* <div className="grid grid-cols-3 gap-3 sm:gap-6 mb-6 sm:mb-8"> */}
                     <div className="text-center">
                       <div className="text-2xl sm:text-4xl font-bold text-red-500 mb-1" ref={ref}>
                         +{count}
                       </div>
                       <div className="text-gray-600 text-sm">
-                        learner and listener
+                        {t("aboutUsLearnerCount")}
                       </div>
                     </div>
                     {/* <div className="text-center">
@@ -118,7 +117,7 @@ export default function AboutUsSection() {
                     <Link
                       href="/about"
                       className="inline-block bg-black text-white px-4 sm:px-6 py-2 rounded-lg hover:bg-gray-800 transition-colors duration-300 shadow-lg text-xs sm:text-sm">
-                      Learn More
+                      {t("aboutUsLearnMore")}
                     </Link>
                   </div>
                 </div>

@@ -5,42 +5,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperType } from "swiper/types"; 
 import { Autoplay } from "swiper/modules";
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
+import testimonialsData from "@/shared/data/testimonials.json";
 
 import "swiper/css";
+import { useLocale } from "next-intl";
+import { cn } from "@/lib/classnames/cn";
 
 const TestimonialsSection = () => {
+  const locale = useLocale();
   const swiperRef = useRef<SwiperType | null>(null);
   const [currentPage, setCurrentPage] = useState(0);
 
-  const testimonials = [
-    {
-      id: 1,
-      name: "Dr. Hosny Nassar",
-      title: "Physiotherapist at Pyramids Football Clubr",
-      image: "/images/testimonials/id_1.jpg",
-      content: "The instructor was really professional, and I recommend Englisher to anyone who wants to improve their English.",
-      contentAr: "المحاضر كان فعلاً محترف، وأنصح أي حد حابب يطوّر مستواه في الإنجليزي إنه يتعلم مع Englisher.",
-      rating: 5,
-    },
-    {
-      id: 2,
-      name: "Mr. Taha Shogaa",
-      title: "Revenue Manager at Rotana Hotel Dubai",
-      image: "/images/testimonials/id_2.jpg",
-      content: "Englisher Academy is one of the most professional and reliable educational platforms I’ve come across. Their commitment to quality, clarity, and learner engagement is truly impressive. ",
-      contentAr: "أكاديمية إنجلشر من أكتر الأماكن اللي شُغلها احترافي ويتوثق فيه. شفت بنفسي قد إيه بيهتموا بجودة المحتوى وتوصيله بشكل بسيط وواضح.",
-      rating: 5,
-    },
-    {
-      id: 3,
-      name: "Mr. Mahmoud Ali",
-      title: "Manager at Rexos Hotels Alamein",
-      image: "/images/testimonials/id_3.jpg",
-      content: "I couldn’t be more satisfied with my experience in the one-to-one private business English program. The instructors were not only highly professional and well-prepared, but they also took the time to tailor each session to my specific goals",
-      contentAr: "بجد مبسوط جدًا من تجربتي في برنامج البزنس إنجلش الـ One-to-One. المُدرسين كانوا في قمة الاحترافية، وفعلاً مهتمين إني أستفيد على قد ما أقدر. كل محاضرة كانت معمولة مخصوص على حسب احتياجي وشغلي. شرحهم كان بسيط وعملي، وخلاني أفهم مصطلحات وأفكار بزنس معقدة بطريقة سهلة.",
-      rating: 5,
-    }
-  ];
+  const {testimonials} = testimonialsData
 
   const totalPages = testimonials.length;
 
@@ -90,11 +66,12 @@ const TestimonialsSection = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-black">
-            <span className="text-red-500">Clients&apos;</span> Testimonials
+            {locale === "en" && <><span className="text-red-500">Clients&apos;</span> Testimonials</>}
+            {locale === "ar" && <><span className="text-red-500">شهادات العملاء</span></>}
           </h2>
 
           {/* ✅ New Navigation */}
-          <div className="flex items-center gap-3 order-2 sm:order-1">
+          <div className="flex items-center gap-3 order-2 sm:order-1" dir="ltr">
             <button
               onClick={() => goToPage((currentPage - 1 + totalPages) % totalPages)}
               className="w-[18px] h-[18px] cursor-pointer rounded-full bg-black text-white flex items-center justify-center hover:bg-gray-800 transition-colors"
@@ -152,17 +129,17 @@ const TestimonialsSection = () => {
                     </div>
                     <div>
                       <h3 className="font-bold text-lg">
-                        <span className="text-red-500">Mr.</span>{" "}
-                        {testimonial.name.replace("Mr. ", "")}
+                        {locale === "en" && <><span className="text-red-500">Mr.{testimonial.gender === "male" ? "s" : ""}</span>  {testimonial.name}</>}
+                        {locale === "ar" && <><span className="text-red-500">{testimonial.nameAr}</span> </>}
                       </h3>
-                      <p className="text-gray-600 text-sm">{testimonial.title}</p>
+                      <p className="text-gray-600 text-sm">{locale === "en" ? testimonial.title : testimonial.titleAr}</p>
                     </div>
                   </div>
                   <p className="text-gray-700 text-sm leading-relaxed mb-4">
-                    {testimonial.content}
+                    {locale === "en" ? testimonial.content : testimonial.contentAr}
                   </p>
                 </div>
-                <div className="flex items-center gap-2">
+                <div className={cn("flex items-center gap-2", locale == "ar" && 'justify-end')}dir="ltr">
                   <span className="text-sm font-semibold">
                     ({testimonial.rating})
                   </span>

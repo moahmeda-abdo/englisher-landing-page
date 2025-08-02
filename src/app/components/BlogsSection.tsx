@@ -1,14 +1,16 @@
 "use client";
-import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi"; 
+import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 import React, { useState } from "react";
 import Link from "next/link";
 import Container from "@/shared/components/Container";
 import blogsData from "@/shared/data/blogs.json";
 import Image from "next/image";
+import { useLocale, useTranslations } from "next-intl";
 
-export default function BlogsSection() {
+export default function  BlogsSection() {
   const [currentPage, setCurrentPage] = useState(0);
-
+  const t = useTranslations();
+  const locale = useLocale();
   const { blogs } = blogsData;
   const blogsPerPage = 2;
   const totalPages = Math.ceil(blogs.length / blogsPerPage);
@@ -30,12 +32,10 @@ export default function BlogsSection() {
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-6 lg:mb-8 gap-4">
             <div className="w-full lg:max-w-1/2">
               <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-bold text-black mb-2 lg:mb-4">
-                Our Blogs
+                {t("blogsSectionTitle")}
               </h2>
               <p className="text-gray-600 text-sm leading-relaxed">
-                A concise guide to mastering American English pronunciation with
-                essential techniques, practical exercises, and strategies for
-                confident, fluent communication.
+                {t("blogsSectionSubtitle")}
               </p>
             </div>
             <div className="flex items-center gap-4 w-full lg:w-auto">
@@ -54,7 +54,7 @@ export default function BlogsSection() {
                 </svg>
                 <input
                   type="text"
-                  placeholder="Search For Article ..."
+                  placeholder={t("blogsSectionSearchPlaceholder")}
                   className="px-4 py-2 pl-9 border text-black border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent w-full lg:w-80 placeholder:text-gray-500 block h-[45px]"
                 />
               </div>
@@ -71,30 +71,30 @@ export default function BlogsSection() {
                     <Link key={blog.id} href={`/blogs/${blog.id}`} className="cursor-pointer w-full lg:w-1/2 flex flex-col-reverse sm:flex-row-reverse lg:flex-row-reverse items-stretch bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                       {/* <div
                         className="cursor-pointer w-full lg:w-1/2 flex flex-col-reverse sm:flex-row-reverse lg:flex-row-reverse items-stretch bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"> */}
-                        <div className="flex-1 p-4 sm:p-6 flex flex-col justify-between">
-                          <div>
-                            <h3 className="text-[#0C0C0C] truncate max-w-[400px] text-lg lg:text-[24px] leading-[150%] mb-2 sm:mb-3 font-semibold line-clamp-2">
-                              {blog.title}
-                            </h3>
-                            <p className="text-[#555555] text-sm sm:text-base leading-[150%] mb-3 sm:mb-4 line-clamp-3 sm:line-clamp-4">
-                              {/* {blog.content} */}
-                              {blog.excerpt}
-                            </p>
-                          </div>
-                          <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-400">
-                            <span>Published at</span>
-                            <span className="font-medium">{blog.publishedDate} - {blog.publishedTime}</span>
-                          </div>
+                      <div className="flex-1 p-4 sm:p-6 flex flex-col justify-between">
+                        <div>
+                          <h3 className="text-[#0C0C0C] truncate max-w-[400px] text-lg lg:text-[24px] leading-[150%] mb-2 sm:mb-3 font-semibold line-clamp-2">
+                            {locale === "en" ? blog.title : blog.titleAr}
+                          </h3>
+                          <p className="text-[#555555] text-sm sm:text-base leading-[150%] mb-3 sm:mb-4 line-clamp-3 sm:line-clamp-4">
+                            {/* {blog.content} */}
+                            {locale === "en" ? blog.excerpt : blog.excerptAr}
+                          </p>
                         </div>
-                        <div className="w-full sm:w-48 lg:w-56 h-48 sm:h-auto flex-shrink-0">
-                          <Image
-                            src={blog.image}
-                            alt={blog.title}
-                            width={250}
-                            height={250}
-                            className="w-full h-full object-cover"
-                          />
+                        <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-400">
+                          <span>{t("blogsSectionPublishedLabel")}</span>
+                          <span className="font-medium">{blog.publishedDate} - {blog.publishedTime}</span>
                         </div>
+                      </div>
+                      <div className="w-full sm:w-48 lg:w-56 h-48 sm:h-auto flex-shrink-0">
+                        <Image
+                          src={blog.image}
+                          alt={blog.title}
+                          width={250}
+                          height={250}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
                       {/* </div> */}
                     </Link>
                   ))}
@@ -104,7 +104,7 @@ export default function BlogsSection() {
           </div>
 
           {/* Bottom Controls */}
-          <div className="flex flex-col sm:flex-row items-center justify-between mt-6 lg:mt-8 gap-4">
+          <div dir="ltr" className="flex flex-col sm:flex-row items-center justify-between mt-6 lg:mt-8 gap-4">
             {/* Navigation Controls */}
             <div className="flex items-center gap-3 order-2 sm:order-1">
               {/* Previous Button */}
@@ -123,11 +123,10 @@ export default function BlogsSection() {
                   <button
                     key={index}
                     onClick={() => goToPage(index)}
-                    className={`w-3 h-3 rounded-full transition-colors ${
-                      index === currentPage
-                        ? "bg-red-600"
-                        : "bg-gray-300 hover:bg-gray-400"
-                    }`}
+                    className={`w-3 h-3 rounded-full transition-colors ${index === currentPage
+                      ? "bg-red-600"
+                      : "bg-gray-300 hover:bg-gray-400"
+                      }`}
                   />
                 ))}
               </div>
@@ -145,7 +144,7 @@ export default function BlogsSection() {
             <Link
               href="/blogs"
               className="bg-black text-white px-7 py-2 rounded-lg font-medium hover:bg-gray-800 transition-colors order-1 sm:order-2 w-full sm:w-auto text-center">
-              Discover More
+              {t("blogsSectionDiscoverMore")}
             </Link>
           </div>
         </div>
