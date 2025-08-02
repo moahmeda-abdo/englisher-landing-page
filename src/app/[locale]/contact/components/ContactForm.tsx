@@ -5,10 +5,11 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { contactSchema, ContactFormValues } from "../validation/contact.schema";
 import { TextInput } from '@/shared/components/TextInput';
 import { TextArea } from '@/shared/components/TextArea';
-import { useTranslations } from "use-intl";
+import { useTranslations, useLocale } from "use-intl";
 
 export const ContactForm = () => {
     const t = useTranslations();
+    const locale = useLocale();
     const {
         register,
         handleSubmit,
@@ -24,7 +25,8 @@ export const ContactForm = () => {
     return (
         <div className='w-full'>
             <h1 className="text-[32px] font-bold text-[#0C0C0C] mb-4 capitalize">
-                <span className="text-[#E50616] ">{t("contactTitle")}</span> {t("contactSubtitle")}
+                {locale == "en" && <><span className="text-[#E50616] ">{t("contactTitle")}</span> {t("contactSubtitle")}</>}
+                {locale == "ar" && <>{t("contactForm")} <span className="text-[#E50616] ">{t("contactTitle")}</span></>}
             </h1>
 
             <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col items-center w-full gap-5'>

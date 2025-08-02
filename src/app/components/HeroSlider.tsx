@@ -105,7 +105,7 @@ export default function HeroSlider() {
         <div className="relative z-20 h-full flex items-center">
           <div className="container mx-auto px-8">
             <div className="w-full lg:max-w-[70%]">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight flex flex-col gap-1">
                 <span className="text-red-500">{t(current.tagKey)}</span>{" "}
                 <span className="text-white">{t(current.titleKey)}</span>
               </h1>

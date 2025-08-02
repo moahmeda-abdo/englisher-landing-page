@@ -5,17 +5,20 @@ import Container from '@/shared/components/Container'
 import React from 'react'
 import { ContactForm } from './components/ContactForm'
 import { Metadata } from 'next';
+import { useTranslations } from 'next-intl';
 
 export const metadata: Metadata = {
     title: "Contact Us | Englisher",
 };
 
 export default function Page() {
+    const t = useTranslations()
+
     const breadcrumbs = {
-        title: 'Contact Us',
+        title: t('contactBreadcrumbTitle'),
         breadCrumbs: [
-            { title: 'Home', to: '/' },
-            { title: 'Contact Us', to: '/contact' }
+            { title: t('contactBreadcrumbHome'), to: '/' },
+            { title: t('contactBreadcrumbTitle'), to: '/contact' }
         ]
     }
     return (

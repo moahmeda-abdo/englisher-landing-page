@@ -4,6 +4,8 @@ import React from 'react';
 import { BsDot } from 'react-icons/bs';
 import BreadCrumbs from '@/shared/components/BreadCrumbs';
 import Container from '@/shared/components/Container';
+import { useLocale } from 'next-intl';
+import { cn } from '@/lib/classnames/cn';
 
 interface SkillPageProps {
     title: string;
@@ -32,6 +34,8 @@ export default function TestPageLayout({
     reportText,
     chartImage,
 }: SkillPageProps) {
+    const locale = useLocale();
+
     return (
         <div className="bg-[#F3F3F3]">
             <BreadCrumbs title={title} items={breadcrumbs} />
@@ -40,7 +44,7 @@ export default function TestPageLayout({
                 <div className="relative flex justify-center items-center w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="relative bg-white rounded-md shadow-md w-full overflow-hidden">
                         {/* Decorative black corner - hidden on mobile */}
-                        <div className="absolute top-0 left-0 h-[0] w-[30%] lg:h-[40%] lg:w-[40%] bg-black z-0 rounded-tl-md hidden sm:block" />
+                        <div className={cn("absolute top-0 h-[0] w-[30%] lg:h-[40%] lg:w-[40%] bg-black z-0 rounded-tl-md hidden sm:block", locale === "ar" ? 'right-0' : 'left-0')} />
 
                         {/* Mobile Layout */}
                         <div className="flex flex-col lg:hidden relative z-10">

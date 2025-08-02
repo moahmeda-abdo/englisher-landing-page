@@ -2,7 +2,7 @@
   "testimonials": [
     {
       "id": 1,
-      "name": "Mr. Hosny Nassar",
+      "name": "Hosny Nassar",
       "nameAr": "حسن نصار",
       "title": "Physiotherapist at Pyramids Football Club",
       "titleAr": "أخصائي العلاج الطبيعي فى نادى بيرامدز",
@@ -14,7 +14,7 @@
     },
     {
       "id": 2,
-      "name": "Mr. Taha Shogaa",
+      "name": "Taha Shogaa",
       "nameAr": "طه شقاء",
       "title": "Revenue Manager at Rotana Hotel Dubai",
       "titleAr": "مدير مبيعات في فندق روتانا دبي",
@@ -26,7 +26,7 @@
     },
     {
       "id": 3,
-      "name": "Mr. Mahmoud Ali",
+      "name": "Mahmoud Ali",
       "nameAr": "محمد علي",
       "title": "Manager at Rexos Hotels Alamein",
       "titleAr": "مدير في فندق ريكسوس الامين",
@@ -34,6 +34,66 @@
       "content": "I couldn’t be more satisfied with my experience in the one-to-one private business English program. The instructors were not only highly professional and well-prepared, but they also took the time to tailor each session to my specific goals",
       "contentAr": "بجد مبسوط جدًا من تجربتي في برنامج البزنس إنجلش الـ One-to-One. المُدرسين كانوا في قمة الاحترافية، وفعلاً مهتمين إني أستفيد على قد ما أقدر. كل محاضرة كانت معمولة مخصوص على حسب احتياجي وشغلي. شرحهم كان بسيط وعملي، وخلاني أفهم مصطلحات وأفكار بزنس معقدة بطريقة سهلة.",
       "gender": "male",
+      "rating": 5
+    },
+    {
+      "id": 4,
+      "name": "Basem Alkurbi",
+      "nameAr": "باسم الكوربي",
+      "title": "Senior Business Analyst – Saudi Arabia",
+      "titleAr": "مدير تحليلات الاحتياطية - سعودية",
+      "image": "/images/testimonials/id_4.jpg",
+      "content": "It’s practical, engaging, and the instructors are top-notch. I’m finally confident in my pronunciation.",
+      "contentAr": "الكورس عملي وممتع، والمدربين ممتازين. دلوقتي أخيرًا بقيت واثق في نطقي.",
+      "gender": "male",
+      "rating": 5
+    },
+    {
+      "id": 5,
+      "name": "Dina Khouzam",
+      "nameAr": "دينا خزام",
+      "title": "Visual Designer",
+      "titleAr": "مصممة جرافيك",
+      "image": "/images/testimonials/id_5.jpg",
+      "content": "This course not only improved my American accent but also enhanced my overall phonetics skills. I’m more effective in meetings & presentations now!",
+      "contentAr": "الكورس مش بس حسّن لكنتي الأمريكية، ده كمان طوّر مهاراتي في النطق عمومًا. بقيت أكثر فاعلية في الاجتماعات والعروض التقديمية.",
+      "gender": "female",
+      "rating": 5
+    },
+    {
+      "id": 6,
+      "name": "Marwa Abulghet",
+      "nameAr": "مروة أبو الغيط",
+      "title": "Senior Talent Management Specialist",
+      "titleAr": "أخصائية أولى لإدارة المواهب",
+      "image": "/images/testimonials/id_6.jpg",
+      "content": "I took this course to advance my career, and it exceeded my expectations. It’s a must for anyone aiming for fluency.",
+      "contentAr": "دخلت الكورس علشان أطور شغلي، وبصراحة فاق توقعاتي. أنصح بيه لأي حد عايز يتقن الإنجليزي بطلاقة.",
+      "gender": "female",
+      "rating": 5
+    },
+    {
+      "id": 7,
+      "name": "Diala Hasan",
+      "nameAr": "ديالا حسن",
+      "title": "Radio Presenter",
+      "titleAr": "مقدمة برامج إذاعية",
+      "image": "/images/testimonials/id_7.jpg",
+      "content": "Coach Mahmoud’s distinctive approach to disseminating information via his videos sets him apart. Personally, I attribute the improvement in my English pronunciation to his instructional content.",
+      "contentAr": "أسلوب الكوتش محمود المميز في شرح المعلومات من خلال الفيديوهات بيخليه مختلف. وبالنسبة لي، الفضل في تحسن نطقي للإنجليزي بيرجع لمحتواه التعليمي.",
+      "gender": "female",
+      "rating": 5
+    },
+    {
+      "id": 8,
+      "name": "Ghada Gawish",
+      "nameAr": "غادة جويس",
+      "title": "Board Member & Commercial Director",
+      "titleAr": "عضو مجلس إدارة ومديرة تجارية",
+      "image": "/images/testimonials/id_8.jpg",
+      "content": "This course not only helped me master American English pronunciation but also boosted my self-esteem.",
+      "contentAr": "الكورس ساعدني مش بس أتقن النطق الأمريكي، ده كمان زوّد ثقتي بنفسي.",
+      "gender": "female",
       "rating": 5
     }
   ]

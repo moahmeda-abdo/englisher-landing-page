@@ -1,12 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
-
-import React from 'react';
-import { BsDot } from 'react-icons/bs';
-import BreadCrumbs from '@/shared/components/BreadCrumbs';
-import Container from '@/shared/components/Container';
-
-import { Metadata } from 'next';
-import { useTranslations } from 'next-intl';
+import React from "react";
+import { Metadata } from "next";
+import { BsDot } from "react-icons/bs";
+import BreadCrumbs from "@/shared/components/BreadCrumbs";
+import Container from "@/shared/components/Container";
+import { useLocale, useTranslations } from "next-intl";
+import { cn } from "@/lib/classnames/cn";
 
 export const metadata: Metadata = {
     title: " Speaking Test | Englisher",
@@ -14,6 +13,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
     const t = useTranslations();
+    const locale = useLocale();
 
     const title = t("speakingTitle");
     const breadcrumbs = [
@@ -24,7 +24,6 @@ export default function Page() {
     const heroImage = t("speakingHeroImage");
     const logoImage = t("speakingLogoImage");
     const heading = t("speakingHeading");
-    const highlight = t("speakingHighlight");
     const duration = t("speakingDuration");
     const description = t("speakingDescription");
     const skills = [
@@ -43,12 +42,21 @@ export default function Page() {
             <Container className="min-h-screen py-8 md:py-16 flex items-center justify-center">
                 <div className="relative flex justify-center items-center w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="relative bg-white rounded-md shadow-md w-full overflow-hidden">
-                        <div className="absolute top-0 left-0 h-[0] w-[30%] lg:h-[40%] lg:w-[40%] bg-black z-0 rounded-tl-md hidden sm:block" />
+                        <div
+                            className={cn(
+                                "absolute top-0 h-[0] w-[30%] lg:h-[40%] lg:w-[40%] bg-black z-0 rounded-tl-md hidden sm:block",
+                                locale === "ar" ? "right-0" : "left-0"
+                            )}
+                        />
 
                         {/* Mobile Layout */}
                         <div className="flex flex-col lg:hidden relative z-10">
                             <div className="w-full h-48 sm:h-64">
-                                <img src={heroImage} alt="Hero" className="w-full h-full object-cover" />
+                                <img
+                                    src={heroImage}
+                                    alt="Hero"
+                                    className="w-full h-full object-cover"
+                                />
                             </div>
 
                             <div className="p-4 sm:p-6">
@@ -61,7 +69,7 @@ export default function Page() {
                                 )}
 
                                 <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#0C0C0C] mb-4">
-                                    <span className="text-[#E50616]">{highlight}</span> {heading}
+                                    <span className="text-[#E50616]">{heading}</span>
                                 </h1>
 
                                 <div className="flex gap-2 items-center w-full mb-4">
@@ -72,7 +80,9 @@ export default function Page() {
                                             className="w-full h-full object-cover"
                                         />
                                     </div>
-                                    <p className="text-[#0C0C0C] text-lg sm:text-xl font-[400]">{duration}</p>
+                                    <p className="text-[#0C0C0C] text-lg sm:text-xl font-[400]">
+                                        {duration}
+                                    </p>
                                 </div>
 
                                 <p className="text-[#7A7A7A] text-base sm:text-lg font-[400] mb-6 leading-relaxed">
@@ -101,22 +111,35 @@ export default function Page() {
                                             className="w-full h-full object-cover"
                                         />
                                     </div>
-                                    <p className="text-[#7A7A7A] text-sm sm:text-base font-[400] leading-relaxed flex-1">
+                                    <p className="text-[#7A7A7A] text-xs sm:text-base font-[400] leading-relaxed flex-1">
                                         {reportText}
                                     </p>
                                 </div>
 
-                                <img src={chartImage} alt="CEFR Chart" className="w-full object-cover rounded-md" />
+                                <img
+                                    src={chartImage}
+                                    alt="CEFR Chart"
+                                    className="w-full object-cover rounded-md"
+                                />
                             </div>
                         </div>
 
                         {/* Desktop Layout */}
                         <div className="hidden lg:flex p-8 relative z-10">
                             <div className="w-1/2 pr-4 flex items-center">
-                                <img src={heroImage} alt="Hero" className="w-full h-full object-cover rounded-md" />
+                                <img
+                                    src={heroImage}
+                                    alt="Hero"
+                                    className="w-full h-full object-cover rounded-md"
+                                />
                             </div>
 
-                            <div className="w-1/2 pl-4 overflow-y-auto flex flex-col justify-between">
+                            <div
+                                className={cn(
+                                    "w-1/2 overflow-y-auto flex flex-col justify-between",
+                                    locale === "en" ? "pl-4" : "pr-4"
+                                )}
+                            >
                                 <div>
                                     {logoImage && (
                                         <img
@@ -127,7 +150,7 @@ export default function Page() {
                                     )}
 
                                     <h1 className="text-[32px] font-bold text-[#0C0C0C] mb-4">
-                                        <span className="text-[#E50616]">{highlight}</span> {heading}
+                                        <span className="text-[#E50616]">{heading}</span>
                                     </h1>
 
                                     <div className="flex gap-2 items-center w-full mb-4">
@@ -138,20 +161,22 @@ export default function Page() {
                                                 className="object-cover rounded-md block"
                                             />
                                         </div>
-                                        <p className="text-[#0C0C0C] text-[24px] font-[400]">{duration}</p>
+                                        <p className="text-[#0C0C0C] text-[24px] font-[400]">
+                                            {duration}
+                                        </p>
                                     </div>
 
-                                    <p className="text-[#7A7A7A] text-[20px] font-[400] mb-4 leading-9">
-                                        {description}
+                                    <p className="text-[#7A7A7A] text-[18px] font-[400] mb-4 space-y-4 leading-9">
+                                        <span className="block">{description}</span>
                                     </p>
                                 </div>
 
                                 <div>
-                                    <div className="mb-4">
+                                    <div className="mb-4 space-y-4">
                                         <h3 className="text-[#0C0C0C] text-[24px] font-[700]">
                                             {t("speakingSkillsLabel")}
                                         </h3>
-                                        <ul className="text-[#383838] text-[20px] font-[400] flex flex-wrap gap-x-6 gap-y-2">
+                                        <ul className="text-[#383838] text-[18px] font-[400] flex flex-wrap justify-between gap-x-6 gap-y-2">
                                             {skills.map((skill) => (
                                                 <li key={skill} className="flex items-center">
                                                     <BsDot className="text-2xl" />
@@ -169,7 +194,7 @@ export default function Page() {
                                                 className="object-cover rounded-md block"
                                             />
                                         </div>
-                                        <p className="text-[#7A7A7A] text-[20px] font-[400] leading-9 flex-1">
+                                        <p className="text-[#7A7A7A] text-base font-[400] leading-9 flex-1">
                                             {reportText}
                                         </p>
                                     </div>

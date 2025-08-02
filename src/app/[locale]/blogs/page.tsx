@@ -3,7 +3,7 @@ import BreadCrumbs from "@/shared/components/BreadCrumbs";
 import Container from "@/shared/components/Container";
 import blogsData from "@/shared/data/blogs.json";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 export const metadata = {
   title: "Our Blogs | Englisher - English Learning Tips & Insights",
@@ -14,6 +14,7 @@ export const metadata = {
 export default function BlogsPage() {
   const { blogs } = blogsData;
   const t = useTranslations();
+  const locale = useLocale();
 
   const highlightedBlog = blogs.find((blog) => blog.is_highlighted) || blogs[0];
   const otherBlogs = blogs.filter((blog) => !blog.is_highlighted);
@@ -59,15 +60,12 @@ export default function BlogsPage() {
                 </p>
 
                 <h1 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-black mb-3 sm:mb-4 leading-tight">
-                  {highlightedBlog.title}
+                  {locale === "en" ? highlightedBlog.title : highlightedBlog.titleAr}
                 </h1>
 
                 <div className="space-y-3 sm:space-y-4 mb-4 sm:mb-6">
                   <p className="text-[#555555] text-sm sm:text-base leading-relaxed sm:leading-[180%]">
-                    {t("highlightedBlogParagraph1")}
-                  </p>
-                  <p className="text-[#555555] text-sm sm:text-base leading-relaxed sm:leading-[180%]">
-                    {t("highlightedBlogParagraph2")}
+                    {locale === "en" ? highlightedBlog.excerpt : highlightedBlog.excerptAr}
                   </p>
                 </div>
 
@@ -133,7 +131,7 @@ export default function BlogsPage() {
                           overflow: "hidden",
                         }}
                       >
-                        {blog.title}
+                        {locale === "en" ? blog.title : blog.titleAr}
                       </span>
                     </h3>
 
@@ -146,7 +144,7 @@ export default function BlogsPage() {
                         overflow: "hidden",
                       }}
                     >
-                      {blog.excerpt}
+                      { locale === "en" ? blog.excerpt : blog.excerptAr}
                     </p>
                   </div>
                 </article>
