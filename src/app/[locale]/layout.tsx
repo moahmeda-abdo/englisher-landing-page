@@ -6,6 +6,7 @@ import { routing } from '@/i18n/routing';
 import Nav from '@/shared/components/Nav';
 import Footer from '@/app/components/Footer';
 import WhatsAppButton from '../components/WhatsAppButton';
+import { Viewport } from 'next';
 
 export const locales = ['en', 'ar'];
 
@@ -15,6 +16,12 @@ const almarai = Almarai({
     display: 'swap',
     weight: ['300', '400', '700', '800'],
 });
+
+export const viewport: Viewport = {
+    width: "device-width",
+    initialScale: 1,
+    viewportFit: "cover",
+};
 
 export default async function LocaleLayout({
     children,
