@@ -64,7 +64,7 @@ export default function BlogDetailsPage() {
                     <img
                       src={blog?.image}
                       alt="English learning environment with modern workspace"
-                      className="w-full object-contain lg:object-cover rounded-t-lg lg:rounded-b-lg  lg:h-[min(653px,50vh)]"
+                      className="w-full object-contain lg:object-cover rounded-t-lg lg:rounded-b-lg lg:h-[min(653px,50vh)]"
                       // style={{ height: "min(653px, 50vh)" }}
                     />
                   </div>
@@ -73,7 +73,7 @@ export default function BlogDetailsPage() {
                 <div
                   className={cn(
                     "bg-white opacity-100 backdrop-blur-lg p-2 sm:p-6 md:p-4 rounded-b-lg lg:rounded-t-lg shadow-xl z-10",
-                    "max-h-[500px] max-w-[700px] min-h-[400px] mx-auto -mt-[20vh] lg:mt-0",
+                    "max-h-[500px] max-w-[700px] min-h-[400px] mx-auto lg:-mt-[20vh] lg:mt-0",
                     "lg:absolute lg:top-[50px] lg:transform lg:mx-0",
                     locale === "en"
                       ? "lg:right-[-50px] lg:-translate-x-10"
