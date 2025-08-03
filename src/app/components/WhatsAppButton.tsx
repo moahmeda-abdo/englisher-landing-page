@@ -42,7 +42,7 @@ export default function WhatsAppButton({
       />
 
       {/* WhatsApp Float Button */}
-      <div className={`fixed bottom-6 right-6 z-50 group ${className}`}>
+      <div className={`fixed bottom-10 right-10 md:bottom-8 md:right-8 z-50 group ${className}`}>
         <div className="relative">
           <button
             onClick={handleWhatsAppClick}
@@ -51,12 +51,12 @@ export default function WhatsAppButton({
             onFocus={() => setShowTooltip(true)}
             onBlur={() => setShowTooltip(false)}
             className={cn(
-              "w-14 h-14 bg-black hover:bg-black/80 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-4 cursor-pointer",
+              "w-10 h-10 md:w-14 md:h-14 bg-black hover:bg-black/80 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-4 cursor-pointer",
             )}
             aria-label="Contact us on WhatsApp for English learning support"
           >
             <svg
-              className="w-6 h-6 text-white"
+              className="w-4 h-4 md:w-6 md:h-6 text-white"
               fill="currentColor"
               viewBox="0 0 24 24"
               aria-hidden="true"
