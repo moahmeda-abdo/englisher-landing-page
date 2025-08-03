@@ -44,7 +44,7 @@ export default function ContactSection() {
     }
   };
   return (
-    <section className="w-full h-[700px] flex items-center !bg-[#F3F3F3] relative">
+    <section className="w-full h-[700px] flex items-center !bg-[#F3F3F3] relative" data-aos="fade-up">
       {/* Left Side - Dark Form Section */}
       <div className="w-full lg:w-1/2 bg-black flex items-center justify-center py-[75px] px-8 lg:px-16 lg:rounded-r-lg">
         <div className="w-full max-w-md">

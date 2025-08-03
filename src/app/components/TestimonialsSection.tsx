@@ -62,7 +62,7 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <section className="text-white py-16">
+    <section className="text-white py-16" data-aos="fade-up">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-black">
@@ -129,7 +129,7 @@ const TestimonialsSection = () => {
                     </div>
                     <div>
                       <h3 className="font-bold text-lg">
-                        {locale === "en" && <><span className="text-red-500">Mr.{testimonial.gender === "male" ? "s" : ""}</span>  {testimonial.name}</>}
+                        {locale === "en" && <><span className="text-red-500">Mr{testimonial.gender === "male" ? "" : "s"}.</span>  {testimonial.name}</>}
                         {locale === "ar" && <><span className="text-red-500">{testimonial.nameAr}</span> </>}
                       </h3>
                       <p className="text-gray-600 text-sm">{locale === "en" ? testimonial.title : testimonial.titleAr}</p>

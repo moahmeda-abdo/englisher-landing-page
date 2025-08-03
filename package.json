@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^5.1.1",
+    "aos": "^2.3.4",
     "clsx": "^2.1.1",
     "i18next": "^25.3.2",
     "lodash": "^4.17.21",
@@ -30,6 +31,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4.1.11",
+    "@types/aos": "^3.0.7",
     "@types/lodash": "^4.17.20",
     "@types/node": "^20",
     "@types/react": "^19",

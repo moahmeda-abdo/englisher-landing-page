@@ -7,7 +7,7 @@ const OurPartnersSection = () => {
   const t = useTranslations();
 
   return (
-    <section className="w-full py-16 px-2 flex flex-col items-center justify-center text-black gap-4">
+    <section className="w-full py-16 px-2 flex flex-col items-center justify-center text-black gap-4" data-aos="fade-up">
       <h2 className="text-2xl md:text-3xl font-bold text-center">
         {t("ourPartnersTitle")}
       </h2>

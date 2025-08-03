@@ -16,7 +16,8 @@ export default function AboutUsSection() {
     <section
       className="relative w-full bg-[#F3F3F3] overflow-hidden min-h-[calc(100vh-50px)] flex items-center justify-center py-8 px-2 md:px-0"
       role="region"
-      aria-labelledby="about-us-heading">
+      aria-labelledby="about-us-heading"
+      data-aos="fade-up">
       <Container className="h-fit">
         <div className="h-full">
           <div className="px-4 sm:px-8 w-full h-full relative">

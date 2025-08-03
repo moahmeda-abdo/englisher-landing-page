@@ -58,12 +58,38 @@ export default function HeroSlider() {
   const t = useTranslations();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  const [displayedTitle, setDisplayedTitle] = useState("");
+  const [titleIndex, setTitleIndex] = useState(0);
+  const [isTyping, setIsTyping] = useState(true);
+
+  const current = heroSlides[currentSlide];
+  const currentTitle = t(current.titleKey);
+
+  // Typing effect for title
+  useEffect(() => {
+    if (titleIndex < currentTitle.length) {
+      const timeout = setTimeout(() => {
+        setDisplayedTitle(currentTitle.slice(0, titleIndex + 1));
+        setTitleIndex(titleIndex + 1);
+      }, 40); // Adjust typing speed here (lower = faster)
+      return () => clearTimeout(timeout);
+    } else {
+      setIsTyping(false);
+    }
+  }, [titleIndex, currentTitle]);
+
+  // Reset typing when slide changes
+  useEffect(() => {
+    setDisplayedTitle("");
+    setTitleIndex(0);
+    setIsTyping(true);
+  }, [currentSlide]);
 
   useEffect(() => {
     if (!isAutoPlaying) return;
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
-    }, 5000);
+    }, 7000);
     return () => clearInterval(interval);
   }, [isAutoPlaying]);
 
@@ -80,8 +106,6 @@ export default function HeroSlider() {
     setCurrentSlide((prev) => (prev - 1 + heroSlides.length) % heroSlides.length);
   };
 
-  const current = heroSlides[currentSlide];
-
   return (
     <>
       <EducationalOrganizationStructuredData />
@@ -90,6 +114,7 @@ export default function HeroSlider() {
         className="relative h-[calc(100vh-50px)] w-full overflow-hidden"
         role="banner"
         aria-label={t("heroAriaHeroSection")}
+        data-aos="fade-up"
       >
         <div className="absolute inset-0 bg-gradient-to-br from-black to-[#ff747e] z-10 opacity-15" />
         <div
@@ -107,7 +132,12 @@ export default function HeroSlider() {
             <div className="w-full lg:max-w-[70%]">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight flex flex-col gap-1">
                 <span className="text-red-500">{t(current.tagKey)}</span>{" "}
-                <span className="text-white">{t(current.titleKey)}</span>
+                <span className="text-white">
+                  {displayedTitle}
+                  {isTyping && (
+                    <span className="animate-pulse border-r-2 border-white ml-1"></span>
+                  )}
+                </span>
               </h1>
 
               <p className="text-base md:text-lg text-gray-300 mb-8 leading-relaxed max-w-2xl">

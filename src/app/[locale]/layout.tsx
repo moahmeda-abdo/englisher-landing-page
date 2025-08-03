@@ -7,6 +7,7 @@ import Nav from '@/shared/components/Nav';
 import Footer from '@/app/components/Footer';
 import WhatsAppButton from '../components/WhatsAppButton';
 import { Viewport } from 'next';
+import AOSProvider from '@/shared/components/AOSProvider';
 
 export const locales = ['en', 'ar'];
 
@@ -45,7 +46,7 @@ export default async function LocaleLayout({
         <div dir={locale === 'ar' ? 'rtl' : 'ltr'} className={`${almarai.variable} font-sans`}>
             <NextIntlClientProvider locale={locale} messages={messages}>
                 <Nav />
-                {children}
+                <AOSProvider>{children}</AOSProvider>
                 <Footer />
 
                 {/* WhatsApp Button */}

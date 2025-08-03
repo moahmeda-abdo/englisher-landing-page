@@ -76,6 +76,7 @@ export default function CoursesSection() {
       className="relative h-[calc(100vh-50px)] w-full bg-gradient-to-r from-gray-900 via-gray-800 to-red-900 overflow-hidden px-3 md:px-0"
       role="region"
       aria-labelledby="courses-heading"
+      data-aos="fade-up"
     >
       <div className="absolute left-0 top-0 w-full xl:w-[45%] h-full z-10 bg-[url(/images/assets/courses_bg.png)] bg-cover bg-center bg-no-repeat">
         <div className="absolute inset-0 bg-gradient-to-r from-black to-[90%] to-[#3a0004] opacity-90" />

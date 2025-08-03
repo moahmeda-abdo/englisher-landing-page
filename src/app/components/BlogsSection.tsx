@@ -25,7 +25,7 @@ export default function  BlogsSection() {
   };
 
   return (
-    <section className="w-full bg-[#F3F3F3] py-8 lg:py-12 min-h-[500px] lg:min-h-[700px]">
+    <section className="w-full bg-[#F3F3F3] py-8 lg:py-12 min-h-[500px] lg:min-h-[700px]" data-aos="fade-up">
       <Container className="h-full px-4">
         <div className="h-full flex flex-col">
           {/* Header */}

@@ -11,7 +11,8 @@ export default function WhatWeOfferSection() {
     <section
       className="relative py-20 px-8 overflow-hidden h-[400px]"
       role="region"
-      aria-labelledby="what-we-offer-heading">
+      aria-labelledby="what-we-offer-heading"
+      data-aos="fade-up">
 
       <img
         src="/home/what-we-offer.png"

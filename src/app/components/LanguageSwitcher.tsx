@@ -36,7 +36,7 @@ export default function LanguageSwitcher() {
             {/* Trigger button */}
             <button
                 onClick={() => setOpen(prev => !prev)}
-                className="flex items-center gap-2 bg-transparent text-white px-3 py-1 rounded-md hover:shadow "
+                className="flex items-center gap-2 bg-transparent text-white px-3 py-1 rounded-md hover:shadow cursor-pointer"
                 dir='ltr'
             >
                 <Image src={current.flag} alt={current.short} width={20} height={20} />
@@ -58,7 +58,7 @@ export default function LanguageSwitcher() {
                         <button
                             key={key}
                             onClick={() => changeLanguage(key)}
-                            className="flex w-full items-center gap-2 px-3 py-2 hover:bg-gray-100 text-sm text-left"
+                            className="flex w-full items-center gap-2 px-3 py-2 hover:bg-gray-100 text-sm text-left cursor-pointer"
                         >
                             <Image src={flag} alt={label} width={20} height={20} />
                             <span className='text-gray-700'>{label}</span>

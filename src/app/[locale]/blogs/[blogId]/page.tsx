@@ -64,8 +64,8 @@ export default function BlogDetailsPage() {
                     <img
                       src={blog?.image}
                       alt="English learning environment with modern workspace"
-                      className="w-full object-contain lg:object-cover rounded-t-lg lg:rounded-b-lg"
-                      style={{ height: "min(653px, 50vh)" }}
+                      className="w-full object-contain lg:object-cover rounded-t-lg lg:rounded-b-lg  lg:h-[min(653px,50vh)]"
+                      // style={{ height: "min(653px, 50vh)" }}
                     />
                   </div>
                 </div>
@@ -108,9 +108,12 @@ export default function BlogDetailsPage() {
                       </h3>
 
                       {/* Content */}
-                      <p className="text-gray-600 text-sm leading-relaxed mb-4 overflow-hidden">
+                      <p
+                        className="text-gray-600 text-sm leading-relaxed mb-4 overflow-hidden whitespace-pre-line max-h-[350px] sm:max-h-[360px] overflow-y-auto small-scrollbar-autohide"
+                      >
                         {locale === "en" ? blog.content : blog.contentAr}
                       </p>
+
                     </div>
 
                     <div className="flex justify-start items-center gap-6">
