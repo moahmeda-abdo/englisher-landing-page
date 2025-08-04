@@ -11,9 +11,9 @@ const OurPartnersSection = () => {
       <h2 className="text-2xl md:text-3xl font-bold text-center">
         {t("ourPartnersTitle")}
       </h2>
-      <p className="text-gray-600 md:max-w-[40%] text-center mb-4 text-xs md:text-sm lg:text-base">
+      {/* <p className="text-gray-600 md:max-w-[40%] text-center mb-4 text-xs md:text-sm lg:text-base">
         {t("ourPartnersDescription")}
-      </p>
+      </p> */}
 
       <div dir="ltr" className="flex flex-col md:flex-row gap-8 w-full max-w-5xl justify-center items-center">
         {/* London Partner */}

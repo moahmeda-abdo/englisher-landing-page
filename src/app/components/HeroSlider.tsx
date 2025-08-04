@@ -130,7 +130,7 @@ export default function HeroSlider() {
         <div className="relative z-20 h-full flex items-center">
           <div className="container mx-auto px-8">
             <div className="w-full lg:max-w-[70%]">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight flex flex-col gap-1">
+              <h1 className="text-base sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight flex flex-col gap-1">
                 <span className="text-red-500">{t(current.tagKey)}</span>{" "}
                 <span className="text-white">
                   {displayedTitle}
@@ -158,7 +158,7 @@ export default function HeroSlider() {
         </div>
 
         <nav
-          className="absolute left-0 bottom-30 md:bottom-24 md:left-[12%] z-30 mx-auto px-8"
+          className="absolute left-0 bottom-30 md:bottom-24 md:left-[12%] z-30 mx-auto px-8 hidden sm:inline-block"
           aria-label={t("heroSliderNavigation")}
         >
           <div className="flex justify-center items-center gap-3 md:gap-2" dir="ltr">

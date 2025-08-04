@@ -5,6 +5,7 @@ import Container from "@/shared/components/Container";
 import { useTranslations, useLocale } from "next-intl";
 import React from "react";
 import { aboutMetadata, aboutJsonLd } from "./meta";
+import CountUp from "@/shared/components/CountUpSSR";
 
 export const metadata = aboutMetadata;
 
@@ -55,19 +56,19 @@ export default function AboutPage() {
             <p className="text-lg text-gray-700 mb-6">{t("aboutDescription2")}</p>
 
             <div className="mt-8" dir="ltr">
-              <div className="bg-white rounded-xl flex flex-col md:flex-row justify-between items-center px-8 py-6 gap-6 border border-gray-200">
+              <div className="bg-white rounded-xl flex flex-col md:flex-row justify-center items-center px-8 py-6 gap-6 border border-gray-200">
                 <div className="flex flex-col items-center">
-                  <span className="text-3xl font-bold text-red-600">+12000</span>
+                  <span className="text-3xl font-bold text-red-600">+<CountUp end={12000} duration={2000} /></span>
                   <span className="text-gray-900 text-base">{t("aboutStatsLearners")}</span>
                 </div>
-                <div className="flex flex-col items-center">
+                {/* <div className="flex flex-col items-center">
                   <span className="text-3xl font-bold text-red-600">+15</span>
                   <span className="text-gray-900 text-base">{t("aboutStatsCourses")}</span>
                 </div>
                 <div className="flex flex-col items-center">
                   <span className="text-3xl font-bold text-red-600">+5</span>
                   <span className="text-gray-900 text-base">{t("aboutStatsEbooks")}</span>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

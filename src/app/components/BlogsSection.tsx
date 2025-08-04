@@ -34,9 +34,9 @@ export default function  BlogsSection() {
               <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-bold text-black mb-2 lg:mb-4">
                 {t("blogsSectionTitle")}
               </h2>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              {/* <p className="text-gray-600 text-sm leading-relaxed">
                 {t("blogsSectionSubtitle")}
-              </p>
+              </p> */}
             </div>
             <div className="flex items-center gap-4 w-full lg:w-auto">
               <div className="relative flex-1 lg:flex-none">
